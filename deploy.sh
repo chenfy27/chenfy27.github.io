@@ -2,5 +2,5 @@
 
 while true; do
 	jekyll serve --host 0.0.0.0
-	sleep 3
+	sleep 1
 done
