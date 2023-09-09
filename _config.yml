@@ -1,0 +1,50 @@
+# Site settings
+title: 陈方勇的网络笔记
+email: chenfy27@qq.com
+description: > # this means to ignore newlines until "baseurl:"
+  陈方勇的网络笔记
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+url: https://chenfy27.gitee.io # the base hostname & protocol for your site
+rss_url: /pages/feed.xml
+author: chenfy27
+
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
+recent_num: 1024
+
+# Social account
+#twitter: 
+#weibo: 
+github: chenfy27
+#instagram: 
+#linkedin: 
+
+# avatar and Favicon
+avatar: pic/avatar.jpg
+favicon: pic/favicon.ico
+
+# disqus config
+#disqus:
+#  shortname: chenfy
+
+# google analytics config
+ga:
+  id: 
+  url: 
+
+# Build settings
+permalink: :year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+mathjax: enabled
+sass:
+  style: compressed
+
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
