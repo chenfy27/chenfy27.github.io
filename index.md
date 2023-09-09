@@ -3,7 +3,7 @@ layout: post
 title: 常用链接
 ---
 
-- [51Nod](http://www.51nod.com/onlineJudge/user.html#!userId=37545)
+- [51Nod](https://www.51nod.com/Challenge/UserIndex.html#userId=4612)
 - [微软相关系统与工具](http://msdn.itellyou.cn/)
 - [图解数据结构与算法](https://visualgo.net/)
 - [Geeks For Geeks](http://www.geeksforgeeks.org/)
