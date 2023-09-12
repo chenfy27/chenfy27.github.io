@@ -37,7 +37,11 @@ ga:
 # Build settings
 permalink: :year/:month/:day/:title.html
 markdown: kramdown
-highlighter: rouge
+highlighter: none
+rouge:
+  css_class: 'highlight'
+  css_style: 'color:#657b83;background-color:#fdf6e3;'
+  code_theme: 'solarized-light'
 mathjax: enabled
 sass:
   style: compressed
