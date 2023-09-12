@@ -82,7 +82,7 @@ $(function() {
     var filter = $(this).data('filter');
     toc.hide();
     if (filter === 'recent') {
-      toc.slice(0, 1024).fadeIn(350);
+      toc.slice(0, 4096).fadeIn(350);
     } else {
       $('.toc-link[data-tags~=' + filter + ']').fadeIn(350);
     }
@@ -90,7 +90,7 @@ $(function() {
   });
   // Only show recent
   toc.hide();
-  toc.slice(0, 1024).fadeIn(350);
+  toc.slice(0, 4096).fadeIn(350);
 
   // Menu
   menu.on('click', function() {
