@@ -17,7 +17,7 @@ tag:
 
 区间dp一般是按区间长度由短往长递推，由于回文分奇回文和偶回文，对应边界情况分别是长度为1和2的子串，预处理的时间复杂度为O(n^2)。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 char s[10005];
@@ -49,7 +49,7 @@ int main() {
 
 分别采用左乘和右乘的方式计算哈希，如果是回文串，哈希值必定相同，非回文串的哈希值一般不相等。由于右乘方式要计算子区间哈希值时要用到除法，而取余操作不能直接除，故而先打表求幂时，顺带把它关于模的乘法逆元也算出来，预处理的时间复杂度为O(nlogn)。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -115,7 +115,7 @@ int main() {
 
 分析：设dp[i]表示前i个字符可划分的最少段数，在求dp[i+1]时，依次枚举以s[i+1]结尾的子串，长度从1递增，检查子串是否为回文，并更新dp[i+1]。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 char s[5005]; int dp[5005];

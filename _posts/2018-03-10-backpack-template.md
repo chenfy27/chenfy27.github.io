@@ -9,7 +9,7 @@ tag:
 
 题面：有n种物品和一个容量为v的背包，每种物品只有1件，第i种物品的花费为c[i]，价值为w[i]，求背包所能容纳的最大价值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, v, c[505], w[505], f[100005];
@@ -32,7 +32,7 @@ int main() {
 
 题面：有n种物品和一个容量为v的背包，每种物品都有无数件，第i种物品的花费为c[i]，价值为w[i]，求背包所能容纳的最大价值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, v, c[505], w[505], f[100005];
@@ -55,7 +55,7 @@ int main() {
 
 题面：有n种物品和一个容量为v的背包，每种物品m[i]件，第i种物品的花费为c[i]，价值为w[i]，求背包所能容纳的最大价值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, v, c[105], w[105], m[105], f[50005];

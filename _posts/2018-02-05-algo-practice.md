@@ -11,7 +11,7 @@ tag:
 
 分析：由于图可能存在环，不能直接dfs，考虑先求原图的强连通分量，将各连通分量缩成点，再用这些点构成新图，这样新图不存在环，可以用dfs求。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 20000;
@@ -82,7 +82,7 @@ int main() {
 
 分析：根据新的字典序定义比较函数，传给sort函数即可。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 map<int,int> mp;
@@ -116,7 +116,7 @@ int main()
 
 分析：从左往右扫，记到当前元素为止的最大值amax，如果后续存在比amax小的元素，则不可在此划分，应继续，否则截成一个子数组，因而需要预处理前缀最大值和后缀最小值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, a[100005], pre[100005], suf[100005];
@@ -159,7 +159,7 @@ int main() {
 
 设A(p,n)表示1~n中与p互质的数的个数，显然n越大，A(n,p)也就越大，因此具有单调性。对于L(x,p)，如果不考虑大于x的条件，那么这是一个从1开始的序列，加上大于x的限制相当于选择了新的起点，设第k个元素为ans，那么必有A(ans,p)=A(x,p)+k，且ans最小，可用二分搜索求解。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int nf, f[10];

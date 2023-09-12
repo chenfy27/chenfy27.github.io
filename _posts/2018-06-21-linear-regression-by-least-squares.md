@@ -49,7 +49,7 @@ $$ \theta = (X^{T}X)^{-1} X^{T} Y$$
 
 假设有线性关系$$Y = 9 + 4X_{1} + X_{2} + 2X_{3}$$，下面随机生成一些数据作为样本，用于求解系数。
 
-```python
+```
 import random
 
 def func(x1, x2, x3):
@@ -75,7 +75,7 @@ for i in range(5):
 
 下面根据最小二乘法的结论来求解参数。
 
-```python
+```
 import numpy as np
 from numpy import dot
 from numpy.linalg import inv
@@ -100,7 +100,7 @@ print(theta)
 
 再如，假定国内生产总值GDP与消费Consumption、货币供应量MO、进出口总额EM以及投资Investment这4个因素存在某种线性关系，[这里]({{"/data/yeardata.csv" | prepend: site.baseurl}})提供了一些样本数据，试着量化该线性关系。
 
-```python
+```
 import pandas as pd
 import numpy as np
 from numpy import dot

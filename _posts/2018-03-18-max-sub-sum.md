@@ -11,7 +11,7 @@ tag:
 
 分析：设dp[i]表示以数字a[i]结尾的子段的和的最大值，那么dp[i] = max(a[i], a[i]+dp[i-1])。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -36,7 +36,7 @@ int main() {
 
 分析：如果取到最优值时没有跨过首尾元素，那么可当成普通数组的最大子段和来做；反之，可按普通数组求最小子段和，再用总和减去最小子段和即可。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -65,7 +65,7 @@ int main() {
 
 分析：预处理出前缀和，二分查找。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -95,7 +95,7 @@ int main() {
 
 分析：枚举子矩阵的行上下边界，固定行后求出各列元素之和，转化为一维的最大子段和问题可得到最优解的列范围。可预处理出各列的前缀和，便于快速算出指定行范围内各列元素之和。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

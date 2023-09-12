@@ -10,7 +10,7 @@ keywords:
 
 策略：先选中编号为1~K的元素，然后枚举编号为K+1~N的元素，设当前元素编号为X，它被选中的概率为K/X，如果被选中，则以等概率的方式从结果集中选出一个替换掉。
 
-```c
+```
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>

@@ -11,7 +11,7 @@ keywords:
 
 方法2：是在归并排序的过程中进行统计，时间复杂度为O(nlogn)，是最快的方法。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -48,7 +48,7 @@ int main() {
 
 第1种做法是按下标顺序挨个加入，bit的下标表示值，在加入某个元素时，bit中元素的下标都比它要小，所以要统计值比它大的元素个数，由于本题中元素值的取值范围太大，数组开不下，需要先离散化。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, a[50005], b[50005], c[50005], f[50005];
@@ -91,7 +91,7 @@ int main() {
 
 第2种做法是按元素值从小到大的顺序依次插入，bit的下标代表元素下标，在加入某个元素时，bit中元素的值均不超过它，需要统计bit中下标比它大的元素个数。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct st {

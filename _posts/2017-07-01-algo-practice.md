@@ -61,7 +61,7 @@ keywords:
 
 思路：由于总长才100，最简单的方法是枚举所有区间。考虑到最长连续签到天数必是连续的一串，故而未签到的记录也是连续的，因此可枚举长度为m+1的未签到记录，以此作为连续签到的两端(不包含)，取最大值即可。
 
-```cpp
+```
 int t, n, m, ans, a[105];
 int main() {
     scanf("%d", &t);
@@ -84,7 +84,7 @@ int main() {
 
 思路：两个简单的递归即可。
 
-```cpp
+```
 char pre[32], mid[32];
 void dfs(int ll, int lr, int rl, int rr) {
     int cnt = 0;
@@ -107,7 +107,7 @@ int main() {
 
 思路：更一般的问题是求连通图的直径，做法是任选一点开始做bfs，然后以最后访问的点为起点再做一次bfs，第二次bfs的起终点即为端点，其距离为最大。
 
-```cpp
+```
 int n, x, y, d, vis[100005];
 vector<int> g[100005];
 int bfs(int u, int &v) {
@@ -145,7 +145,7 @@ int main() {
 
 思路：S1第x个字符对应S2第x+len(S)-K的字符，如果len(S)-k的位置仍然属于S1，那么对应S2的字符位置为x+2(len(S)-k)...，一直递推下去，这些位置的字符都必须相同，可找出这些位置字符出现次数最多的，然后将出现少的改成出现多的即可。需要注意K等于len(S)的特例。
 
-```cpp
+```
 int t, k, l, vis[1005];
 char s[1005];
 void addchar(int x, int cnt[], int &most) {
@@ -194,7 +194,7 @@ int main() {
 
 思路：二分答案，难点在于给定最大值X，如何判定该方案是否可行。可换个角度看，把点看成区间，把所有居民按X轴从左往右分配到各个据点中去。
 
-```cpp
+```
 struct st {
     int x, y;
     bool operator<(const st &o) const {

@@ -9,7 +9,7 @@ keywords:
 
 对于简单的console程序，可以直接将内容输出到终端，对于比较复杂的程序，建议输出到磁盘文件中。
 
-```c
+```
 static void ulog(const char *fmt, ...) {
     FILE *fp = fopen("ulog.txt", "a");
     va_list ap;
@@ -23,7 +23,7 @@ static void ulog(const char *fmt, ...) {
 
 上述接口已能满足大部分调试要求，但对于性能调优，需要增加时间项；对于多进程多线程，可考虑加上进程ID或线程ID。
 
-```c
+```
 static void ulog(const char *fmt, ...)
 {
     struct timeval tv;
@@ -44,7 +44,7 @@ static void ulog(const char *fmt, ...)
 
 对于简单使用场景，也可以通过宏来实现。
 
-```c
+```
 #define ulog(fmt, ...) {\
     FILE *fp = fopen("ulog.txt", "a");\
     fprintf(fp, "[%04d] %s:%d (%s) $ "fmt"\n", getpid() % 10000,\

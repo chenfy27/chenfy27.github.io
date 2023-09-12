@@ -36,7 +36,7 @@ python操作excel需要安装openpyxl库，执行`sudo pip install openpyxl`即�
 </table>
 <p></p>
 
-```python
+```
 import openpyxl
 
 wb = openpyxl.load_workbook('test.xlsx')

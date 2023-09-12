@@ -13,7 +13,7 @@ keywords:
 
 以下是DFS实现的核心代码：
 
-```cpp
+```
 int color[N] = {0};
 int dfs(int x, int c) {
     color[x] = c;
@@ -41,7 +41,7 @@ int dfs(int x, int c) {
 
 参考代码如下：
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #include <vector>

@@ -9,7 +9,7 @@ tag:
 
 与指针表示法类似，数组表示法的节点也由两部分构成：数据本身和下一个节点的位置。
 
-```cpp
+```
 TYPE a[n];
 int nxt[n];
 ```
@@ -22,7 +22,7 @@ int nxt[n];
 - 添加节点
 - 遍历链表
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 char s[100005];
@@ -54,7 +54,7 @@ int main() {
 
 对应的链式写法参考如下：
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct Node {

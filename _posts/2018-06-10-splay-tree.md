@@ -15,7 +15,7 @@ splay的基础是BST，通过旋转定义了splay操作，它支持将指定的�
 
 由于节点含有父指针，在旋转时要多维护3个节点的父指针，以及顶端结点的孩子指针。
 
-```cpp
+```
 void RotateL(Node *x) {
     Node *y = x->R; y->P = x->P;
     x->R = y->L; if (x->R) x->R->P = x;
@@ -54,7 +54,7 @@ void RotateR(Node *x) {
 
 以下接口将节点x旋转为y的子节点。特别的，当y为空指针时，表示将x旋至根。
 
-```cpp
+```
 void Splay(Node *x, Node *y) {
     if (!x) return;
     while (x->P != y) {
@@ -78,7 +78,7 @@ void Splay(Node *x, Node *y) {
 
 ### 查找节点
 
-```cpp
+```
 Node* SplayFind(Node *&x, int key) {
     Node *t = Find(x, key);
     if (!t) return t;
@@ -89,7 +89,7 @@ Node* SplayFind(Node *&x, int key) {
 
 ### 插入节点
 
-```cpp
+```
 Node* SplayInsert(Node *&x, int key) {
     Node *t = Insert(x, nullptr, key);
     Splay(t, nullptr);
@@ -101,7 +101,7 @@ Node* SplayInsert(Node *&x, int key) {
 
 删除节点时，先将待删除节点旋至根，再调BST的接口删除。
 
-```cpp
+```
 Node* SplayDelete(Node *&x, int key) {
     Node *t = SplayFind(x, key);
     if (!t) return t;

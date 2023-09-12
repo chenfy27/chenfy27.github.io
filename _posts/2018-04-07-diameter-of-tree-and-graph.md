@@ -11,7 +11,7 @@ tag:
 
 求树的直径一般用两次bfs解决，当然也可以用两次dfs，这里以bfs为例进行说明。先在树上任选一点A作为起点进行bfs，记录最后被访问的点B，那么B离A的距离最远，再以B为起点进行第二次bfs，即可得到直径。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, vis[100005];
@@ -52,7 +52,7 @@ int main() {
 
 由于图可能不连通，且可能有环，不能使用类似树的方法求解，考虑用更为一般的做法，根据直径定义，先通过floyd算法求出任意两点间的最短距离，再取最大值即可，注意图不连通的情况。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, d[105][105];

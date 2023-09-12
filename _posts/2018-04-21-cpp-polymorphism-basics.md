@@ -9,7 +9,7 @@ tags:
 
 设A为父类，B为A的子类，那么在定义B类的实例时，先调用A的构造函数，再调用B的构造函数，而析构函数的调用顺序正好相反。
 
-```cpp
+```
 class A {
 public:
     A() { cout << "construct A" << endl; }
@@ -56,7 +56,7 @@ destory A
 
 多态分静态联编和动态联编。静态联编发生在编译阶段，比如函数重载和运算符重载，在编译期间就可以决定调用的是哪个重载函数或运算符。动态联编则发生在运行阶段，比如继承和虚函数。
 
-```cpp
+```
 class Shape {
 public:
     virtual void show() { cout << "i am shape" << endl; }

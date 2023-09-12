@@ -7,7 +7,7 @@ category: 平台
 
 在C语言中，经常用一维数组来表示二维表，假定表的大小为row\*col，那么第i行第j列元素对应的下标为i*col+j，因而可以简单地将其按二维表输出，如果互换i与j，并用row代替col，那么输出的便是原二维表的转置。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int main() {

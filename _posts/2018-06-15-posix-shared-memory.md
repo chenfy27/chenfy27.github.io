@@ -14,7 +14,7 @@ posix提供了两种在无亲缘关系进程间共享内存区的方法：
 - 内存映射文件：由open函数打开，再由mmap函数把得到的描述符映射到当前进程地址空间中的一个文件。
 - 共享内存区对象：由shm_open打开一个IPC名字，所返回的描述符由mmap函数映射到当前进程的地址空间。
 
-```c
+```
 int shm_open(const char *name, int oflag, mode_t mode);
 int shm_unlink(const char *name);
 ```
@@ -26,7 +26,7 @@ int shm_unlink(const char *name);
 
 无论哪种方式，都需要用到mmap函数，它的原型如下：
 
-```c
+```
 void* mmap(void *addr, size_t len, int prot, int flags, int fd, off_t offset);
 ```
 
@@ -41,13 +41,13 @@ mmap成功返回后，fd可以关闭，该操作对于由mmap建立的映射关�
 
 在处理mmap时，普通文件或者共享内存区对象的大小都可以通过ftruncate函数进行修改。
 
-```c
+```
 int ftruncate(int fd, off_t length);
 ```
 
 从进程的地址空间删除映射关系，使用munmap函数。
 
-```c
+```
 int munmap(void *addr, size_t len);
 ```
 
@@ -57,7 +57,7 @@ int munmap(void *addr, size_t len);
 
 以下示例代码用的普通文件做内存映射，信号量用的是有名的，因而不需要放到共享内存中就能用于进程间同步。
 
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -103,7 +103,7 @@ int main() {
 
 同样的功能，下面代码用共享内存区对象来实现，并把信号量放到共享内存中。
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
@@ -153,13 +153,13 @@ int main() {
 
 4.4BSD提供匿名内存映射，彻底避免了文件的创建和打开，其办法是将mmap的flags参数设成MAP_SHARED \| MAP_ANON，把fd参数置为-1。这样的内存区自动被初始化为0。
 
-```c
+```
 p = mmap(NULL, sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANON, -1, 0);
 ```
 
 而SVR4则可以用/dev/zero进行映射。
 
-```c
+```
 int fd = open("/dev/zero", O_RDWR);
 int *p = mmap(NULL, sizeof(int), PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
 close(fd);

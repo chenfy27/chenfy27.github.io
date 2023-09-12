@@ -9,7 +9,7 @@ Windows下有多种线程同步方法，出于安全考虑，程序运行方式�
 
 下面介绍临界区的用法，相关API如下：
 
-```c
+```
 #include <windows.h>
 void InitializeCriticalSection(LPCRITICAL_SECTION lpCriticalSection);
 void EnterCriticalSection(LPCRITICAL_SECTION lpCriticalSection);
@@ -19,7 +19,7 @@ void DeleteCriticalSection(LPCRITICAL_SECTION lpCriticalSection);
 
 以下是个简单的例子，经测试，对于同样的数据范围，临界区比互斥量快很多。
 
-```c
+```
 #include <windows.h>
 #include <process.h>
 #include <stdio.h>

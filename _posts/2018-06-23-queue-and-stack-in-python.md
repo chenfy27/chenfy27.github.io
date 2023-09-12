@@ -11,7 +11,7 @@ tag:
 
 python内置了list类型，通过它的append和pop方法就可以实现栈的功能，由于各项操作都是O(1)的，速度还算快。
 
-```python
+```
 class Stack():
     def __init__(self):
         self.data = []
@@ -72,7 +72,7 @@ class Stack():
 
 下面编写代码对上述三种数据结构做性能测试。
 
-```python
+```
 import logging as log
 from collections import deque
 import heapq

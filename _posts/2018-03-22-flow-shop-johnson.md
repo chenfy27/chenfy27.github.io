@@ -19,7 +19,7 @@ tag:
 
 题目可参考：[51nod1205](http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1205) 流水线调度
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct st {int a, b;}t;

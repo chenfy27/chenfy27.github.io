@@ -24,7 +24,7 @@ keywords:
 给定一个数字序列，然后有多次询问Q(l, r, k)，即区间[l,r]内第k小的数是多少。
 
 
-```cpp
+```
 #include <cstdio>
 #include <algorithm>
 using namespace std;

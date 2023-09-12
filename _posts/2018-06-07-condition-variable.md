@@ -11,7 +11,7 @@ tag:
 
 条件变量相关的常用编程接口如下：
 
-```c
+```
 #include <pthread.h>
 
 int pthread_cond_wait(pthread_cond_t *cptr, pthread_mutex_t *mptr);
@@ -30,7 +30,7 @@ int pthread_cond_destroy(pthread_cond_t *cptr);
 
 给条件变量发送信号的代码大致如下：
 
-```c
+```
 struct {
     pthread_mutex_t mutex;
     pthread_cond_t cond;
@@ -45,7 +45,7 @@ pthread_mutex_unlock(&var.mutex);
 
 测试条件并进入睡眠以等待该条件为真的代码大致如下：
 
-```c
+```
 pthread_mutex_lock(&var.mutex);
 while (条件为假)
     pthread_cond_wait(&var.cond, &var.mutex);
@@ -58,7 +58,7 @@ pthread_mutex_unlock(&var.mutex);
 
 首先，多个生产者同时访问公共资源，生产者之间需要同步，这里用互斥锁就行了。另一方面，只有当元素被生产者设置后消费者才能进行验证，因此消费者和生产者之间也需要同步，这种等待同步与生产者之间的竞争同步有所区别，用条件变量来实现。
 
-```c
+```
 #include <stdio.h>
 #include <pthread.h>
 

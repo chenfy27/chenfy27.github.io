@@ -30,7 +30,7 @@ Bloom Filter一般需要提供两个接口：
 
 以下代码简单实现了个Bloom Filter。
 
-```python
+```
 class BloomFilter(object):
     def __init__(self, size):
         self.size = 2 ** size

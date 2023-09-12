@@ -33,7 +33,7 @@ c[] = {1, 2, 0, 2, 3}
 
 设原数组为a[n]，排序去重后的数组记为b[m]，a[n]做离散化后对应的数组为c[n]。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, a[105], b[105], c[105];

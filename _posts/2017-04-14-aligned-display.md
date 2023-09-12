@@ -15,7 +15,7 @@ keywords:
 
 以下是关键代码：
 
-```c
+```
 int Strlen(const char *s) {
     int i, len;
     for (i = len = 0; s[i]; i++) {

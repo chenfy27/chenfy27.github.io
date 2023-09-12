@@ -17,7 +17,7 @@ Floyd算法用于求加权图中任意两点之间的最短路径，很好地体
 
 设dist[i][j]表示从点i到点j的最短路径长度，那么初始化：`dist[i][j] = (i == j) ? 0 : INF`，处理过程如下：
 
-```cpp
+```
 for (k = 1; k <= n; k++)
 for (i = 1; i <= n; i++)
 for (j = 1; j < n; j++)
@@ -26,7 +26,7 @@ for (j = 1; j < n; j++)
 
 ### [例题](http://hihocoder.com/problemset/problem/1089)
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #define INT_MAX 0x3f3f3f3f

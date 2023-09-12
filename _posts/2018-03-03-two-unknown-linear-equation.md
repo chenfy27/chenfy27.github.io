@@ -11,7 +11,7 @@ tag:
 
 分析：不妨设物品A的性价比更高（如不满足交换二者即可），那么Ha/Wa>=Hb/Wb，即Ha\*Wb>=Hb\*Wa。考虑Wb件A物品与Wa件B物品，因为Wb\*Wa=Wa\*Wb，故而它们的花费是一样的，但收益却有高低，因为Ha\*Wb>=Hb\*Wa，因此将Wa件B物品换成Wb件A物品是更优的选择，至少不会更差。根据这条性质，用反证法容易证明，取到最优值时，性价比低的物品数肯定不会超过sqrt(C)，从而得到了sqrt(n)时间复杂度的枚举法。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -35,7 +35,7 @@ int main() {
 
 分析：根据扩展欧几里德算法判断方程是否有解，如有则求出一组解(x0,y0)，那么通解可表示为(x0+kB,y0-kA)，统计正整数解即可。需要注意的是用扩展欧几里德算法求出解的特征，\|x0\|+\|y0\|最小，且系数绝对值大的那项绝对值小。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

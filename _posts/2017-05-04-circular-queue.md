@@ -7,7 +7,7 @@ keywords:
 
 循环队列在普通队列的基础上，将队头与队尾相连，解决了队列假满的问题。
 
-```c
+```
 typedef struct {
     int front;
     int rear;
@@ -48,7 +48,7 @@ int DeQueue(Queue *q, int *x) {
 
 在计算下标时，用到了效率不高的取余操作，如果将队列大小设为2的幂，那么可以将取余运算转化为位运算，提高效率。例如队列大小取128时，以下语句是等价的：
 
-```c
+```
 #define QUEUE_MAX_SIZE 128
 
 q->rear = (q->rear + 1) % QUEUE_MAX_SIZE;

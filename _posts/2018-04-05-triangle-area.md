@@ -13,7 +13,7 @@ tag:
 
 可以用海伦公式计算三角形的面积，设三边长分别为a, b, c，记半周长l=(a+b+c)/2，那么三角形的面积可表示为：s=sqrt(l\*(l-a)\*(l-b)\*(l-c))。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct Point {
@@ -44,7 +44,7 @@ int main() {
 
 用向量AB叉乘向量AC，忽略方向，其大小的绝对值为三角形面积的2倍。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct Point {

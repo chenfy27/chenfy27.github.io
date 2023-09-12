@@ -9,7 +9,7 @@ keywords:
 
 下面介绍通过捕捉段错误信号SIGSEGV，并输出发生段错误时的函数调用堆栈信息，协助查找段错误出现的位置，在不能产生coredump文件的环境下这是一种替换方案。
 
-```c
+```
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,7 +99,7 @@ a.c:22
 
 以下是个简单的例子。
 
-```c
+```
 #include <unistd.h>
 #include <sys/wait.h>
 #include <stdio.h>

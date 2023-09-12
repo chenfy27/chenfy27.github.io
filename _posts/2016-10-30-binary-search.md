@@ -11,7 +11,7 @@ keywords:
 
 给定一非降序整数数组A和整数k，求最小的i使得A[i]大于等于k，如果不存在则返回-1。
 
-```cpp
+```
 int LowerBound(int a[], int n, int k) {
     int lo = 0, hi = n - 1, mid;
     while (lo < hi) {
@@ -29,7 +29,7 @@ int LowerBound(int a[], int n, int k) {
 
 给定一非降序整数数组A和整数k，求最小的i使得A[i]大于k，如果不存在则返回-1。
 
-```cpp
+```
 int UpperBound(int a[], int n, int k) {
     int lo = 0, hi = n - 1, mid;
     while (lo < hi) {
@@ -47,7 +47,7 @@ int UpperBound(int a[], int n, int k) {
 
 给定一非降序整数数组A和整数k，求最大的i使得A[i]等于k，如不存在则返回-1。
 
-```cpp
+```
 int Find(int a[], int n, int k) {
     int lo = 0, hi = n - 1, mid;
     while (lo < hi) {
@@ -69,7 +69,7 @@ int Find(int a[], int n, int k) {
 
 这个问题更快的解法是牛顿迭代，这里只为演示二分搜索的使用。先通过倍增法估算出解的范围，然后进行二分搜索即可。
 
-```cpp
+```
 x = int(raw_input())
 lo = hi = 1
 while hi < x:

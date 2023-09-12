@@ -39,7 +39,7 @@ AB * AB > AC * AC + BC * BC
 
 ### 代码实现
 
-```cpp
+```
 struct Point {
     double x, y;
 };

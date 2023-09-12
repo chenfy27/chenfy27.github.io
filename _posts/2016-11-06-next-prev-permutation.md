@@ -23,7 +23,7 @@ STL提供了现成接口next_permutation/prev_permutation，这里讨论该算�
 
 ### 参考代码
 
-```cpp
+```
 #include <stdio.h>
 void swap(int *x, int *y) {
     int t = *x; *x = *y; *y = t;

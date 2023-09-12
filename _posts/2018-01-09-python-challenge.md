@@ -9,7 +9,7 @@ category: python
 
 计算2的38次方。
 
-```python
+```
 >>> 2**38
 274877906944
 >>> pow(2,38)
@@ -20,7 +20,7 @@ category: python
 
 实现字母移位编解码。
 
-```python
+```
 import string, sys
 a = string.ascii_lowercase
 b = a[2:] + a[:2]
@@ -32,7 +32,7 @@ print s.translate(string.maketrans(a, b))
 
 从一大段字符串中寻找只出现过一次的字符，并按原顺序输出。
 
-```python
+```
 import urllib, re, sys
 def get_file(fname):
     url = 'http://www.pythonchallenge.com/pc/def/' + fname
@@ -51,7 +51,7 @@ for i in txt:
 
 从一大段字符中找出小写字母，要求它的左右分别恰好有三个大写字母，按原顺序输出。
 
-```python
+```
 import urllib, re, sys
 def get_file(fname):
     url = 'http://www.pythonchallenge.com/pc/def/' + fname
@@ -66,7 +66,7 @@ print ''.join(ans)
 
 有一组类似链表结构的网页，每个页面给出了下一个页面的地址参数，遍历整个链找到最后的结点。
 
-```python
+```
 import urllib, re
 def get_file(fname):
     url = 'http://www.pythonchallenge.com/pc/def/' + fname
@@ -85,7 +85,7 @@ while True:
 
 使用pickle模块加载序列化后的内容，然后打印出来。
 
-```python
+```
 import urllib, pickle
 def get_file(fname):
     url = 'http://www.pythonchallenge.com/pc/def/' + fname
@@ -99,7 +99,7 @@ print '\n'.join([''.join([j[0] * j[1] for j in i]) for i in ans])
 
 与第4关类似，但这次结点信息存在于一个zip文件中，需要从头到尾拼接各个文件的注释内容。
 
-```python
+```
 import urllib, StringIO, zipfile, re
 def get_zip(fname):
     url = 'http://www.pythonchallenge.com/pc/def/' + fname
@@ -120,7 +120,7 @@ print cmt
 
 在一张图片的中间取一部分像素点，将其灰度值转换成对应的Ascii字符。
 
-```python
+```
 >>> import urllib, StringIO
 >>> from PIL import Image
 >>> src = urllib.urlopen('http://www.pythonchallenge.com/pc/def/oxygen.png').read()
@@ -136,7 +136,7 @@ print cmt
 
 给出经bzip压缩过的用户名和密码内容，将其还原。
 
-```python
+```
 >>> import bz2
 >>> uid='BZh91AY&SYA\xaf\x82\r\x00\x00\x01\x01\x80\x02\xc0\x02\x00 \x00!\x9ah3M\x07<]\xc9\x14\xe1BA\x06\xbe\x084'
 >>> pwd='BZh91AY&SY\x94$|\x0e\x00\x00\x00\x81\x00\x03$ \x00!\x9ah3M\x13<]\xc9\x14\xe1BBP\x91\xf08'
@@ -150,7 +150,7 @@ print cmt
 
 给出一个整数列表代表一条线，其中第i点的x,y坐标下标分别为2i, 2i+1，根据坐标点画出该图。
 
-```python
+```
 >>> from PIL import Image, ImageDraw
 >>> l1 = [146,399, ...]
 >>> l2 = [156,141, ...]
@@ -165,7 +165,7 @@ print cmt
 
 求[look-and-say sequence](https://en.wikipedia.org/wiki/Look-and-say_sequence)中第31项的长度。
 
-```python
+```
 a = ['1']
 for i in xrange(30):
     t = ''
@@ -191,7 +191,7 @@ print len(a[30])
 
 给出一张图像，要求去掉x,y坐标和为奇数的像素点。
 
-```python
+```
 import urllib
 import StringIO
 from PIL import Image, ImageDraw

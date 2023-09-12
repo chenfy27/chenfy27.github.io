@@ -11,7 +11,7 @@ category: 平台
 
 可以在程序开始处获取命令行参数，然后将argv的内容修改掉。
 
-```c
+```
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>

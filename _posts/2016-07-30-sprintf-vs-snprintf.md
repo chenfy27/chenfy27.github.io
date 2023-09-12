@@ -14,7 +14,7 @@ keywords:
 
 一个月后，客户B反馈了类似的问题，但这次更离谱：有一条工单居然和之前所有的会话都关联上了！出于问题的严重性，客户要求一周内必须找出原因并予以解决，我只好硬着头皮返回去看那几行代码：
 
-```cpp
+```
 char sql[1024];
 snprintf(sql, sizeof(sql), "UPDATE session SET worknote_id = %d, worknote_desc = '%s' \
                             WHERE id = %d", worknote_id, worknote_desc, sid);

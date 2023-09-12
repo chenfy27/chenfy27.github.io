@@ -13,7 +13,7 @@ keywords:
 
 例题：[求最小生成树](http://hihocoder.com/problemset/problem/1098)
 
-```cpp
+```
 int f[100005];
 struct Edge {
     int s, t, c;
@@ -53,7 +53,7 @@ int main() {
 
 Prim算法的策略以及代码实现与Dijkstra算法几乎是相同的，唯一的区别在于Dijkstra算法的点在入堆时用的是源点到该点的距离，而Prim算法中用的是边权。
 
-```cpp
+```
 int n, m, a, b, c, v[10005], ans;
 vector<pair<int,int> > g[10005];
 struct ST {

@@ -23,7 +23,7 @@ epoll的优点与select的缺点正好相反：
 
 相关编程接口声明如下：
 
-```c
+```
 struct epoll_event {
     __unit32_t events;
     epoll_data_t data;
@@ -59,7 +59,7 @@ int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout)
 
 ### 基于epoll的回射服务端
 
-```c
+```
 #include <sys/epoll.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -140,7 +140,7 @@ int main(int argc, char *argv[]) {
 
 将套接字修改为非阻塞方式可参考如下代码：
 
-```c
+```
 #include <fcntl.h>
 int flag = fcntl(fd, F_GETFL, 0);
 fcntl(fd, F_SETFL, flag | O_NONBLOCK);
@@ -150,7 +150,7 @@ fcntl(fd, F_SETFL, flag | O_NONBLOCK);
 
 以下是采用边缘触发方式的回射服务器代码。
 
-```c
+```
 #include <sys/epoll.h>
 #include <unistd.h>
 #include <stdio.h>

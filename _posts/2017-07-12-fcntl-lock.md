@@ -11,7 +11,7 @@ flock()可以对文件进行加锁，但有一些缺陷，比如只能对整个�
 
 fcntl()接口定义如下：
 
-```c
+```
 #include <fcntl.h>
 int fcntl(int fd, int cmd, ... /* struct flock *arg */);
 struct flock {
@@ -27,7 +27,7 @@ struct flock {
 
 下面是常见用法：
 
-```c
+```
 int reg_lock(int fd, int cmd, int type, off_t offset, int whence, off_t len) {
     struct flock lock;
     lock.l_type = type;
@@ -64,7 +64,7 @@ pid_t test_lock(int fd, int type, off_t offset, int whence, off_t len) {
 
 下面是一个完整的例子。
 
-```c
+```
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>

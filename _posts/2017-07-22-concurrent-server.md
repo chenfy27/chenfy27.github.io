@@ -18,7 +18,7 @@ keywords:
 - 父子进程关闭不再需要的描述符。由于套接字属于操作系统所有，进程只不过是拥有代表相应套接字的文件描述符，在调用fork后，将会有2个文件描述符指向同一个套接字。由于当套接字存在多个描述符时，只有全部描述符都关闭后，才能销毁它，因此，在调用fork后，父子进程都应把无关的套接字文件描述符关掉。
 - 子进程的回收。
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 
 ### 基于多路复用方式
 
-```c
+```
 #include <stdio.h>
 #include <sys/socket.h>
 #include <string.h>
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
 - socket描述符的传递
 - 线程的回收
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

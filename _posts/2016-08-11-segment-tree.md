@@ -19,7 +19,7 @@ keywords: 线段树,算法
 
 - [插点问线](http://codevs.cn/problem/1080/)
 
-```cpp
+```
 #include <iostream>
 using namespace std;
 typedef long long LL;
@@ -76,7 +76,7 @@ int main() {
 
 - [插线问点](http://codevs.cn/problem/1081/)
 
-```cpp
+```
 #include <iostream>
 using namespace std;
 typedef long long LL;
@@ -132,7 +132,7 @@ int main() {
 
 - [插线问线](http://codevs.cn/problem/1082/)
 
-```cpp
+```
 #include <iostream>
 using namespace std;
 typedef long long LL;

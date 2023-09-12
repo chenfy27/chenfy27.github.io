@@ -27,7 +27,7 @@ floyd判圈算法也称为快慢指针算法，可在有限状态机、迭代函
 
 题面：有款老式计算器，最多只能显示n(1<=n<=9)位数字，最开始上面显示的数字为k，然后不断平方，如溢出则显示结果的前n位，问显示的最大数字是多少？
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int Next(int n, int x) {

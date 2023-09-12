@@ -26,7 +26,7 @@ keywords: 算法, 二叉堆
 
 建堆过程是调整现有数组的顺序，使之满足堆的性质。做法是从最后一个分支节点（下标为n/2）开始，到根节点为止，依次对每个分支节点做下沉操作，总时间复杂度为O(n)。
 
-```cpp
+```
 void down(int idx) {
     int i, j;
     for (i = idx; (j = 2*i) <= size; i = j) {
@@ -47,7 +47,7 @@ void heapify(int n) {
 
 先将元素放到最后，再上浮调整以满足堆的性质，时间复杂度为O(logn)。
 
-```cpp
+```
 void up(int idx) {
     while (idx > 1 && h[idx] > h[idx/2]; i /= 2)
         swap(h[i], h[i/2]);
@@ -64,7 +64,7 @@ void push(int val) {
 二叉堆的最值在堆顶，即下标为1的位置。  
 弹出最值后，把最后的元素补到该处，对它做下沉操作，时间复杂度为O(logn)。
 
-```cpp
+```
 int top() {
     return h[1];
 }
@@ -78,7 +78,7 @@ void pop() {
 
 ### 判空操作
 
-```cpp
+```
 bool empty() {
     return size == 0;
 }

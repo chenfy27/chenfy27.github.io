@@ -11,7 +11,7 @@ tag:
 
 分析：汉堡越多，需要的钱不会更少，存在单调性，可用二分搜索，注意确定好上下界，避免溢出。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -47,7 +47,7 @@ int main() {
 
 分析：可以从左到右，从小到大依次确定各位数，不断更新答案。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 string a;
@@ -70,7 +70,7 @@ int main() {
 
 也可以从左到右，从大到小搜索答案，找到的第一个即为所求。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -109,7 +109,7 @@ int main() {
 
 分析：由于询问很多，先预处理出前10w项，考虑到前缀最长只有40位，可以只计算每一项的前几位，为保证准确性，可以多算几位，比如前50位，利用滚动数组优化空间，前缀查询可通过trie高效实现。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct Node {
@@ -174,7 +174,7 @@ int main() {
 
 分析：由于k范围较小，可以直接暴力枚举。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 bool chk(int x) {
@@ -197,7 +197,7 @@ int main() {
 如果k的范围变大，可考虑dfs构造完美数的方法。
 
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> ans;
@@ -227,7 +227,7 @@ int main() {
 
 分析：先插线，然后求前缀和得到各个温度的覆盖数，根据该值与k的大小关系判断此温度是否为可接受温度，然后再做前缀和预处理，根据前缀和可在常数时间内回答各个询问。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 200000;
@@ -259,7 +259,7 @@ int main() {
 
 分析：可以先用筛选法预处理出所有d[n]，然后就是个插线问线问题，由于要求使用在线算法，考虑用线段树，但问题关键在于如何快速更新。经过观察发现，对于正整数n，执行很少次的n=d[n]操作便会得到n=1或n=2，后续再执行n=d[n]不会有作何变化，利用该特性可以通过维护区间最大值进行优化。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

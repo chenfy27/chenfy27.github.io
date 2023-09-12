@@ -7,7 +7,7 @@ category: 平台
 
 在执行耗时较长的任务时，有必要显示其工作进度，以便清楚地知道是否卡住或出错了。以下是一种简易实现，效果与Linux字符界面的进度条类似，但进度只有符号，没有数字。
 
-```cpp
+```
 void showpos(int ppos, int cpos) {
     for (int i = 0; i + ppos < cpos; i++)
         putchar('#');
@@ -25,7 +25,7 @@ int progress(int ppos, int done, int total) {
 
 测试代码：
 
-```cpp
+```
 int randn(int lo, int hi) {
     return lo + rand() % (hi - lo + 1);
 }

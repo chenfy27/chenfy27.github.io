@@ -17,7 +17,7 @@ keywords:
 
 先做树链剖分，转为化插线问点问题，可以用线段树或树状数组来实现。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 50005;
@@ -137,7 +137,7 @@ int main() {
 
 将边权记录到子节点上，树剖后转化为区间最值问题，可用线段树解决。需要注意查询时区间不能包含最近公共祖先的权值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 10005;

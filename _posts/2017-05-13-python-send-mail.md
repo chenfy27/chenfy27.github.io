@@ -5,7 +5,7 @@ category: python
 keywords:
 ---
 
-```python
+```
 import smtplib, email
 
 sender = 'chenfy@keyou.cn'

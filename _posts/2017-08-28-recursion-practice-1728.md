@@ -7,7 +7,7 @@ keywords:
 
 ### 给定10进制正整数n，输出其2进制表示。
 
-```c
+```
 #include <stdio.h>
 void dfs(int n) {
     if (n > 1) dfs(n / 2);
@@ -25,7 +25,7 @@ int main() {
 
 更一般地，将正整数n用b进制输出的代码如下：
 
-```c
+```
 void print(int n, int b) {
     if (n >= b) print(n / b);
     printf("%d", n % b);
@@ -36,7 +36,7 @@ void print(int n, int b) {
 
 定义：A[n] = sin(1-sin(2+sin(3-sin(4+...sin(n))...), S[n] = (...(A[1]+n)A[2]+n-1)A[3]+...+2)A[n]+1，现给定n，输出S[n]。
 
-```c
+```
 #include <bits/stdc++.h>
 using namespace std;
 void dfsA(int n) {

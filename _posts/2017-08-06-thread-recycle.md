@@ -15,7 +15,7 @@ keywords:
 
 相关接口如下：
 
-```c
+```
 #include <pthread.h>
 void pthread_exit(void *retval);
 int pthread_join(pthread_t tid, void **retval);
@@ -31,7 +31,7 @@ int pthread_join(pthread_t tid, void **retval);
 
 通过调用pthread_join等待指定的线程。
 
-```c
+```
 pthread_t tid;
 pthread_create(&tid, NULL, ThreadFunc, NULL);
 pthread_join(tid);
@@ -45,7 +45,7 @@ pthread_join(tid);
 - 在子线程中调用pthread_detach(pthread_self())。
 - 在创建线程前设置线程分离属性。
 
-```c
+```
 void* ThreadFunc(void *arg)
 {
     return NULL;
@@ -56,7 +56,7 @@ pthread_create(&tid, NULL, ThreadFunc, NULL);
 pthread_detach(tid);
 ```
 
-```c
+```
 void* ThreadFunc(void *arg)
 {
     pthread_detach(pthread_self());
@@ -67,7 +67,7 @@ pthread_t tid;
 pthread_create(&tid, NULL, ThreadFunc, NULL);
 ```
 
-```c
+```
 void* ThreadFunc(void *arg)
 {
     return NULL;

@@ -11,7 +11,7 @@ keywords: 算法, 并查集
 
 设f[i]表示节点i的父节点。
 
-```cpp
+```
 void Init(int n) {
     for (i = 1; i <= n; i++) f[i] = i;
 }
@@ -19,7 +19,7 @@ void Init(int n) {
 
 ### 2.合并集合
 
-```cpp
+```
 int Root(int x) {
     return x == f[x] ? x : f[x] = Root(f[x]);
 }
@@ -31,7 +31,7 @@ void Merge(int x, int y) {
 
 ### 3.判断连通性
 
-```cpp
+```
 int IsConnected(int x, int y) {
     return Root(x) == Root(y);
 }

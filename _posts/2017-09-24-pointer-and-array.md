@@ -9,7 +9,7 @@ keywords:
 
 具体要求：在主函数中定义变量，将其作为出参传入Generate函数，该函数动态分配内存，返回一个字符串数组，然后再将其传入Print函数分别打印，最后传入Free函数释放动态分配的内存。
 
-```c
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

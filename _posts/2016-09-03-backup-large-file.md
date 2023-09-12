@@ -13,7 +13,7 @@ keywords:
 
 由于客户一直在旁边盯着，我感到很不自在，查代码半个多小时仍没有任何进展。受挫后我决定在本地开GDB调试，很快就找到了出错点，是在一个sprintf语句中出的段错误。
 
-```cpp
+```
 sprintf(buf, "\r%-12lu\r%s%s\n", file_stat.st_size, remotepath, filename + length);
 ```
 

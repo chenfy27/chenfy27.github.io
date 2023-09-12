@@ -19,14 +19,14 @@ keywords:
 
 为方便说明，建立add.c和sub.c两个文件，分别编写加法和减法接口如下：
 
-```c
+```
 int add(int a, int b)
 {
     return a + b;
 }
 ```
 
-```c
+```
 int sub(int a, int b)
 {
     return a - b;
@@ -42,7 +42,7 @@ int sub(int a, int b)
 
 这样，静态库是做好了，用`ar -t libtest.a`可查看该库包含哪些obj文件。接下来写程序调用静态库中的接口。
 
-```c
+```
 #include <stdio.h>
 int main()
 {
@@ -96,7 +96,7 @@ int main()
 
 Linux提供了一组API用于动态加载so文件。
 
-```c
+```
 #include <dlfcn.h>
 void* dlopen(const char *filename, int flag);
 char* dlerror(void);
@@ -109,7 +109,7 @@ int dlclose(void *handle);
 - filename如果不以/开头，则为相对路径，将按照(1)环境变量LD_LIBRARY；(2)/etc/ld.so.cache；(3)/lib, /usr/lib的顺序查找该文件。
 - flag表示在什么时候解决未定义的符号调用，可取RTLD_LAZY和RTLD_NOW。
 
-```c
+```
 #include <stdio.h>
 #include <dlfcn.h>
 typedef int (*Func)(int, int);

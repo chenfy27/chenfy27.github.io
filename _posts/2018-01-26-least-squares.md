@@ -64,7 +64,7 @@ f = (10a + b - 11) ^ 2 + (20a + b - 23) ^ 2 + (50a + b - 58) ^ 2 + (100a + b - 1
 
 ### python实现
 
-```python
+```
 import numpy as np
 from scipy.optimize import leastsq
 
@@ -87,7 +87,7 @@ print(k, b)
 
 解出k=1.24388, b=-2.2245，与上面手算的一致。可以通过pyplot将数据以图的形式直观的展现出来。
 
-```python
+```
 import matplotlib.pyplot as plt
 
 plt.figure()

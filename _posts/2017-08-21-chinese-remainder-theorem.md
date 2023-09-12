@@ -24,7 +24,7 @@ x = sigma(b[i] * p[i] * v[i]) % prod
 
 记最小正整数解为x[0]，那么方程组的第k个解可表示为：x[k] = x[0] + (k - 1) * prod。
 
-```c
+```
 #include <iostream>
 using namespace std;
 typedef long long LL;

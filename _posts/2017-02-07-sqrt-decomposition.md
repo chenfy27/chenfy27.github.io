@@ -21,7 +21,7 @@ keywords:
 
 以下代码评测会超时，加入快速输入可以通过。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, a[30005], m, cnt[1000005], bs, L, R, ans[200005], cur;

@@ -11,7 +11,7 @@ tag:
 
 由于touch命令无法获取更详细的错误信息，我决定通过C代码来做同样的操作，因为函数会返回错误码，由此可从返回值知道进一步信息。
 
-```c
+```
 #include <stdio.h>
 #include <errno.h>
 int main() {

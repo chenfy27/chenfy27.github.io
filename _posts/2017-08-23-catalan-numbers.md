@@ -35,7 +35,7 @@ h(n) = C(2n,n) - C(2n,n-1)   (n>=0)
 
 要计算卡特兰数，简单的做法是根据递推式直接推。
 
-```c
+```
 #include <stdio.h>
 typedef long long LL;
 LL h[30] = {1, 1};

@@ -14,7 +14,7 @@ tag:
 1. 如果m比当前环的长度l还要大，那么肯定绕圈了，结果跟只走m%l步一样。
 2. 由于是环，往左与往右都能到目标位置，尽量按步数少的方向走。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, l[10005], r[10005];

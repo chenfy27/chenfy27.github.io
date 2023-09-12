@@ -9,7 +9,7 @@ keywords:
 
 #### 例1: [CF279B](http://codeforces.com/contest/279/problem/B)求最长区间使元素之和不超过t。
 
-```cpp
+```
 int n, t, a[100005], i, j, sum, ans;
 int main() {
     scanf("%d%d", &n, &t);
@@ -30,7 +30,7 @@ int main() {
 
 #### 例2：[POJ3320](http://poj.org/problem?id=3320)求最短区间包含所有出现过的数。
 
-```cpp
+```
 int i, j, n, a[1000005], ans;
 set<int> st;
 map<int,int> mp;
@@ -57,7 +57,7 @@ int main() {
 
 #### 例3：[CF660C](http://codeforces.com/contest/660/problem/C)在01串中选出最长的子串，使它所包含0的个数不超过k。
 
-```cpp
+```
 int n, k, i, j, a[300005], len, cnt, u, v = -1;
 int main() {
     scanf("%d%d", &n, &k);

@@ -17,7 +17,7 @@ keywords: sort
 
 以下是对整型数组按从小到大排列的示例代码。
 
-```cpp
+```
 void Merge(int *a, int lbeg, int rbeg, int rend, int *t) {
     int i = lbeg, j = rbeg, k = lbeg;
     while (i < rbeg && j < rend)
@@ -44,7 +44,7 @@ void MergeSort(int *a, int size) {
 
 自下而上观察归并排序的过程，可以写出对应的非递归做法。
 
-```cpp
+```
 void MergeSort(int *a, int size) {
     int i, j, *t = malloc(sizeof(int) * size);
     for (i = 1; i < size; i *= 2)

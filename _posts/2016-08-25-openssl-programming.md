@@ -7,7 +7,7 @@ keywords:
 
 ### Base64编码——短内容
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/evp.h>
 int main() {
@@ -28,7 +28,7 @@ $ gcc base64.c -lcrypto
 
 ### Base64解码——短内容
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/evp.h>
 int main() {
@@ -42,7 +42,7 @@ int main() {
 
 ### Base64编码——长内容
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/evp.h>
 int main() {
@@ -63,7 +63,7 @@ int main() {
 
 ### Base64解码——长内容
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/evp.h>
 int main() {
@@ -84,7 +84,7 @@ int main() {
 
 ### 计算哈希值
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/md5.h>
 int main() {
@@ -101,7 +101,7 @@ int main() {
 }
 ```
 
-```cpp
+```
 #include <stdio.h>
 #include <openssl/md5.h>
 int main() {
@@ -125,7 +125,7 @@ int main() {
 
 ### 3DES加解密
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #include <openssl/evp.h>
@@ -150,7 +150,7 @@ int main() {
 }
 ```
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #include <openssl/evp.h>
@@ -179,7 +179,7 @@ int main() {
 
 代码几乎与DES相同，只是密钥和初始向量长度有区别，并且使用的算法不一样。
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #include <openssl/evp.h>
@@ -204,7 +204,7 @@ int main() {
 }
 ```
 
-```cpp
+```
 #include <stdio.h>
 #include <string.h>
 #include <openssl/evp.h>

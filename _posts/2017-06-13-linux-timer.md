@@ -11,7 +11,7 @@ keywords:
 
 alarm也称为闹钟函数，可在进程中设置一个定时器，当时间到达时便给进程发送SIGALRM信号，函数原型如下：
 
-```c
+```
 unsigned int alarm(unsigned int seconds);
 ```
 
@@ -20,7 +20,7 @@ unsigned int alarm(unsigned int seconds);
 
 下面是个简单的例子。
 
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <signal.h>
@@ -39,7 +39,7 @@ int main() {
 
 alarm只能精确到秒，精度也许不能满足要求，这时可以考虑setitimer函数，它有两个功能，一是指定一段时间后发出信号，二是每隔一段时间发出信号。函数原型如下：
 
-```c
+```
 struct timeval {
     time_t tv_sec;
     suseconds_t tv_usec;
@@ -61,7 +61,7 @@ Linux为每个任务安排了3个内部定时器：
 
 以下是个示例，每秒输出一行文字：
 
-```c
+```
 #include <stdio.h>
 #include <signal.h>
 #include <unistd.h>

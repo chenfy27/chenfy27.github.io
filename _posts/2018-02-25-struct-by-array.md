@@ -13,7 +13,7 @@ tag:
 
 常规的做法是用结构体数组来保存活动信息。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct st {
@@ -41,7 +41,7 @@ int main() {
 
 也可以直接用三个一维数组来表示。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, a[10], b[10], x[10];

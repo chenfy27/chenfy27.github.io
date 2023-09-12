@@ -17,7 +17,7 @@ category: 网络
 
 与TCP套接字不同，UDP套接字不会保持连接状态，因此每次传输数据都要添加目标地址信息。
 
-```c
+```
 #include <sys/socket.h>
 ssize_t sendto(int sock, void *buf, size_t nbytes, int flags, struct sockaddr *to, socklen_t addrlen);
 ssize_t recvfrom(int sock, void *buf, size_t nbytes, int flags, struct sockaddr *from, socklen_t *addrlen);
@@ -29,7 +29,7 @@ UDP在发送消息时，需要给出接收端的地址信息；而在接收消�
 
 发送端代码
 
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
 
 接收端代码
 
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
 
 发送端代码
 
-```c
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
 
 接收端代码
 
-```c
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

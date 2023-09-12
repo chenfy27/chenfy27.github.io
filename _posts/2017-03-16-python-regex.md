@@ -39,7 +39,7 @@ match对象：
 
 例1：检查输入是否为有效的变量标识符。
 
-```python
+```
 import sys, re
 pat = re.compile("^[a-zA-Z_][a-zA-Z0-9_]*$");
 for line in sys.stdin:
@@ -51,7 +51,7 @@ for line in sys.stdin:
 
 例2：[从Markdown文件中提取图片链接](https://www.shiyanlou.com/challenges/2817) 
 
-```python
+```
 import re, sys
 pat = re.compile(r'!\[.*\]\((.*)\)')
 with open(sys.argv[1], 'rt') as f:
@@ -61,7 +61,7 @@ with open(sys.argv[1], 'rt') as f:
 
 例3：找出文件中以元音字符开头的单词，去重后按字典序输出。
 
-```python
+```
 import re
 pat = re.compile(r'[aeiou][a-z]*', re.I)
 words = set()
@@ -74,7 +74,7 @@ for word in sorted(words):
 
 例4：分组提取ip地址
 
-```python
+```
 import re
 pat = re.compile(r'(\d+).(\d+).(\d+).(\d+)')
 with open('data') as f:

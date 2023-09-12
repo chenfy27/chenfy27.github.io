@@ -15,7 +15,7 @@ shell中的read命令提供了-s选项，简单方便。
 
 可借助conio.h文件提供的接口实现。
 
-```c
+```
 #include <conio.h>
 int sread(char *prompt, char *buf) {
     int i = 0;
@@ -39,7 +39,7 @@ int sread(char *prompt, char *buf) {
 
 Linux下有现成的函数getpass实现此功能，但manual上说该函数已废弃，可以通过termios.h提供的接口来实现。
 
-```c
+```
 #include <termios.h>
 void toggle_echo() {
     struct termios tc;

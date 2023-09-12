@@ -17,7 +17,7 @@ DLL的加载分为隐式加载和显示加载两种方式。
 
 为简单起见，下面以两数相减为例进行说明。先建立DLL工程，编写接口函数。
 
-```c
+```
 __declspec(dllexport) int sub(int a, int b)
 {
     return a - b;
@@ -26,7 +26,7 @@ __declspec(dllexport) int sub(int a, int b)
 
 这样编译就可以得到lib文件和dll文件了。为方便调用者使用，建议增加头文件，对导出函数进行声时，供调用方包含。
 
-```c
+```
 #ifndef TEST_DLL_H
 #define TEST_DLL_H
 
@@ -43,7 +43,7 @@ __declspec(dllimport) int sub(int a, int b);
 
 下面以隐式加载的方式调用接口。
 
-```c
+```
 #include <stdio.h>
 #include "testdll.h"
 #pragma comment(lib, "testdll.lib")
@@ -60,7 +60,7 @@ int main()
 
 编译通过后生成可执行文件，将testdll.dll放到同一目录下即可正常运行。使用DLL的一个好处在于如果接口内部做了修改，调用者无需重新编译，例如将接口实现重新定义为：
 
-```c
+```
 int sub(int a, int b)
 {
     return b - a;
@@ -69,7 +69,7 @@ int sub(int a, int b)
 
 此时，只要重新生成dll文件替换过去即可生效。另外，如果在原DLL基础上扩展了新的接口，对调用方也没有任何影响。例如，扩展了加法接口。
 
-```c
+```
 __declspec(dllexport) int add(int a, int b)
 {
     return a + b;
@@ -82,14 +82,14 @@ __declspec(dllexport) int add(int a, int b)
 
 用显式加载方式时要用到LoadLibrary函数和GetProcAddress函数，原型如下：
 
-```c
+```
 HINSTANCE LoadLibray(LPCTSTR lpLibFileName);
 FARPROC GetProcAddress(HMODULE hModule, LPCWSTR lpProcName);
 ```
 
 调用接口的示例代码如下：
 
-```c
+```
 #include <stdio.h>
 #include <windows.h>
 int main()

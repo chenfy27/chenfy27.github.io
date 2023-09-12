@@ -11,7 +11,7 @@ keywords:
 
 函数原型为：`char *strsep(char **stringp, const char *delim);`
 
-```cpp
+```
 void split1(char *str, char *delim) {
     char *token;
     for (token = strsep(&str, delim); token; token = strsep(&str, delim))
@@ -36,7 +36,7 @@ chenfy:x:1000:1000::/home/chenfy:/bin/bash
 
 该函数与strsep类似，原型为：`char *strtok(char *str, const char *delim);`
 
-```cpp
+```
 void split2(char *str, char *delim) {
     char *token;
     for (token = strtok(str, delim); token; token = strtok(NULL, delim))
@@ -55,7 +55,7 @@ strtok函数内部使用了静态变量，不可重入，因此只能用在单�
 
 函数原型为：`char *strtok_r(char *str, const char *delim, char **saveptr);`
 
-```cpp
+```
 void split3(char *str, char *delim) {
     char *token, *p;
     for (token = strtok_r(str, delim, &p); token; token = strtok_r(NULL, delim, &p))
@@ -70,7 +70,7 @@ strsep不是标准的C库函数，可移植性不如strtok，另外strsep同样�
 
 下面是自己实现的分割函数。
 
-```cpp
+```
 int split(char *str, char delim, char buf[][64]) {
     int p1 = 0, p2 = 0, cnt = 0, len = 1 + strlen(str);
     while (p1 < len) {

@@ -9,7 +9,7 @@ category: 算法
 
 以下是该做法的示例程序，以字符串唯一标识进行说明，但不限于字符串，可以是任意类型。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef string TYPE;

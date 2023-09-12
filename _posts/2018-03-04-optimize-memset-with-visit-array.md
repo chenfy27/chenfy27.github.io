@@ -9,7 +9,7 @@ tag:
 
 以下代码展示了一般的做法：
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, mx, a[100005], vis[100005];
@@ -42,7 +42,7 @@ int main() {
 
 其实没有必要每次都调用memset重置vis数组，考虑用id作为搜索时是否访问过的标记，代码如下：
 
-```cpp
+```
 nclude <bits/stdc++.h>
 using namespace std;
 int n, mx, a[100005], vis[100005];

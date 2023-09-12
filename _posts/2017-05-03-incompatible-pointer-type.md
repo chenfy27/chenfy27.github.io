@@ -43,7 +43,7 @@ HacCheck是一个后台运行的保姆进程，最初它的功能是定期检测
 
 连接数据库用的是libhac_sqldual.so库，这又是个自己封装的底层库，同样用了很多年。经过上面的调试和分析，此时我已经确定问题出在这个库上，然而一番走查并没有找到问题所在。将我引入正道的是一次意外的编译过程，在make过程中输出了4条告警信息，两处是将指针转换成整数，另两处是不兼容的指针类型转换。下面是有告警的代码：
 
-```c
+```
 typedef struct {
     char host[64];
     char user[64];
@@ -71,7 +71,7 @@ mysql_set_character_set(&conn->connection, "gbk");
 
 我上mysql官网查了下这两个函数的原型，如下所示：
 
-```c
+```
 MYSQL* mysql_real_connect(MYSQL *mysql, const char *host, const char *user,
     const char *passwd, const char *db, unsigned int port,
     const char *unix_socket, unsigned long client_flag);

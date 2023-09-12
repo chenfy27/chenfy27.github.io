@@ -17,7 +17,7 @@ tag:
 
 分析：设圆锥半径为r，由于表面积S固定，直观上看，当r很小时圆锥虽然高，但太瘦，导致体积小；当r很大时圆锥胖，但太矮，体积也不大；应取合适的r值，使宽度和高度平衡，方能取到最大体积。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 const double pi = acos(-1);
@@ -56,7 +56,7 @@ int main() {
 
 分析：d过于偏左或者偏右都会导致结果太大，应该在中间某处取，使得左右两边的带权距离平衡，以获得最小值。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, T;

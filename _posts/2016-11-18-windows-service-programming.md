@@ -11,7 +11,7 @@ Windows服务操作流程一般是：安装服务 => 启动服务 => 停止服�
 
 下面是一个简单的Windows服务编程例子，该服务的功能是每隔1秒钟输出一句\"hello\"。
 
-```cpp
+```
 #include <windows.h>
 #include <stdio.h>
 #include <process.h>

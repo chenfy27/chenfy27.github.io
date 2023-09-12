@@ -31,7 +31,7 @@ n = 2, 4, p^s, 2*p^s  (p>=3, s>=1)
 
 例题：[51nod1135](http://www.51nod.com/onlineJudge/questionCode.html#!problemId=1135) 给出质数p(3<=p<=1e9)，求p最小的原根。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int n, p[10], np;

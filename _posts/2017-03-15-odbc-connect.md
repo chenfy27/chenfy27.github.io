@@ -206,7 +206,7 @@ $ isql dm190 SYSDBA SYSDBA
 
 以下是通过ODBC连接mysql数据库并执行sql语句的示例，其他类型数据库类似。
 
-```c
+```
 #include <sql.h>
 #include <sqltypes.h>
 #include <sqlext.h>

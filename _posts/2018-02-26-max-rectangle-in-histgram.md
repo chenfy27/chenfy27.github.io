@@ -13,7 +13,7 @@ tag:
 
 记h[x]表示坐标为x处的高度，l[x]表示x能往左延伸的最小值，但不包含在内，即h[l[x]] < h[x]，同理，r[x]表示x能往右延伸的最大值，那么在预处理时可用dp的思想跳跃式进行。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

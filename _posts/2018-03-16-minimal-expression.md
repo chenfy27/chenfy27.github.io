@@ -17,7 +17,7 @@ tag:
 
 以字符串为例，下面代码求的是变形词的最小表示，循环数组的求法完全一样。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 int MinExp(string s, int len) {

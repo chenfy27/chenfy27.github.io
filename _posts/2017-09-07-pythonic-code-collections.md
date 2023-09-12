@@ -7,7 +7,7 @@ keywords:
 
 ### 遍历一个范围内的数字
 
-```python
+```
 for i in xrange(6):
     print i ** 2
 ```
@@ -16,7 +16,7 @@ xrange会返回一个迭代器，用来一次一个值地遍历一个范围，�
 
 ### 遍历集合
 
-```python
+```
 colors = ['red', 'green', 'blue', 'yellow']
 for color in colors:
     print color
@@ -24,21 +24,21 @@ for color in colors:
 
 ### 反向遍历集合
 
-```python
+```
 for color in reversed(colors):
     print color
 ```
 
 ### 遍历集合及其下标
 
-```python
+```
 for i, color in enumerate(colors):
     print i, '-->', color
 ```
 
 ### 遍历两个集合
 
-```python
+```
 names = ['raymond', 'rachel', 'mattthew']
 colors = ['red', 'green', 'blue', 'yellow']
 for name, color in izip(names, colors):
@@ -49,7 +49,7 @@ zip在内存中生成一个新的列表，需要更多的内存，izip比zip效�
 
 ### 有序遍历
 
-```python
+```
 colors = ['red', 'green', 'blue', 'yellow']
 for color in sorted(colors):
     print color
@@ -59,20 +59,20 @@ for color in sorted(coloes, reverse = True):
 
 ### 自定义排序顺序
 
-```python
+```
 colors = ['red', 'green', 'blue', 'yellow']
 print sorted(colors, key=len)
 ```
 
 ### 列表解析和生成器
 
-```python
+```
 print sum(i ** 2 for i in xrange(10))
 ```
 
 ### 在循环内识别多个退出点
 
-```python
+```
 def find(seq, target):
     for i, value in enumerate(seq):
         if value == target:
@@ -84,7 +84,7 @@ def find(seq, target):
 
 ### 分离临时上下文
 
-```python
+```
 with open('help.txt', 'w') as f:
     with redirect_stdout(f):
         help(pow)
@@ -94,14 +94,14 @@ with open('help.txt', 'w') as f:
 
 ### 打开关闭文件
 
-```python
+```
 with open('data.txt') as f:
     data = f.read()
 ```
 
 ### 使用锁
 
-```python
+```
 lock = threading.Lock()
 with lock:
     print 'critical section 1'
@@ -110,7 +110,7 @@ with lock:
 
 ### 用字典计数
 
-```python
+```
 colors = ['red', 'green', 'red', 'blue', 'green', 'red']
 
 d = {}

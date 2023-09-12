@@ -7,7 +7,7 @@ keywords:
 
 C语言库函数中没有现成的字符串替换函数，需要手写，由于字符串替换是个常用的工具，这里记录一下。
 
-```cpp
+```
 int strrep(char *str, char *oldstr, char *newstr, int count) {
     int offset = 0, len = strlen(str), oldlen = strlen(oldstr), newlen = strlen(newstr);
     while (count--) {
@@ -27,7 +27,7 @@ int strrep(char *str, char *oldstr, char *newstr, int count) {
 
 有些时候，希望在匹配时不区分大小写，若匹配成功则进行替换。以下是一种实现，思路是复制一个小写的样本用于查找需要替换的位置，而替换操作在原字符串上进行。
 
-```cpp
+```
 int strirep(char *str, char *oldstr, char *newstr, int count) {
     int i, offset = 0, pos, cnt = 0;
     int len = strlen(str), oldlen = strlen(oldstr), newlen = strlen(newstr);

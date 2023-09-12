@@ -11,7 +11,7 @@ IO复用技术在一定程度上可避免此类问题，无论连接的客户端
 
 select模型中最重要的要属select函数和相应的宏操作了，声明如下：
 
-```c
+```
 #include <sys/select.h>
 #include <sys/time.h>
 struct timeval {
@@ -36,7 +36,7 @@ FD_ISSET(int fd, fd_set *fds);
 
 以下是基于select的回射服务器例子。
 
-```c
+```
 #include <sys/select.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -106,7 +106,7 @@ int main(int argc, char *argv[]) {
 
 上述示例是在Linux环境下的，Windows下也有相应的接口，但稍有区别。
 
-```c
+```
 #include <winsock2.h>
 int select(int nfds, fd_set *rset, fd_set *wset, fd_set *eset, const struct timeval *timeout);
 ```
@@ -115,7 +115,7 @@ int select(int nfds, fd_set *rset, fd_set *wset, fd_set *eset, const struct time
 
 处理fd_set的四个宏的名称、功能和用法与Linux完全一样。 下面是Windows版本示例代码。
 
-```cpp
+```
 #include <winsock.h>
 #include <windows.h>
 #include <stdio.h>

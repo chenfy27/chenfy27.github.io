@@ -13,7 +13,7 @@ keywords:
 
 分析：由于n较大，直接递推太慢，考虑构造矩阵通过快速幂来实现。需要注意的是，第1项f(1)不能通过递推来算，只能特判，但这里正好与结果相符，因而可以不用单独处理。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 struct matrix {int d[2][2];};
@@ -52,7 +52,7 @@ int main() {
 
 分析：矩阵快速幂模板题。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

@@ -11,7 +11,7 @@ keywords:
 
 浮点数之间大于、小于关系可以直接比较，但判断是否相等则看两数之差的绝对值是否在指定误差范围内。
 
-```c
+```
 #define EPS 1e-6
 double x, y;
 while (~scanf("%lf%lf", &x, &y)) {
@@ -39,7 +39,7 @@ while (~scanf("%lf%lf", &x, &y)) {
 
 注意，用%.0f来四舍五入取整是不行的，可用如下程序来验证。
 
-```c
+```
 #include <stdio.h>
 int main() {
     int i; double x;

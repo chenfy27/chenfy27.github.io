@@ -9,7 +9,7 @@ keywords:
 
 有些版本的Unix实现在往一个管道中写多于4096字节数据时会表现出这样的行为，这个现象在read一个套接字时很常见，但在write一个字节流套接字时只能在该套接字为非阻塞时才会出现。考虑到这些因素，为保险起见，通常封装接口readn/writen来解决这个问题。
 
-```c
+```
 ssize_t readn(int fd, void *buf, size_t nbytes)
 {
     size_t nread, nleft = nbytes;

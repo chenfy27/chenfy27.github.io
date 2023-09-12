@@ -11,7 +11,7 @@ keywords:
 
 相关编程接口声明如下：
 
-```c
+```
 #include <pthread.h>
 int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);
 int pthread_mutex_destroy(pthread_mutex_t *mutex);
@@ -24,7 +24,7 @@ int pthread_mutex_trylock(pthread_mutex_t *mutex);
 
 以下是个例子。
 
-```c
+```
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -57,7 +57,7 @@ int main() {
 
 相关编程接口声明如下：
 
-```c
+```
 #include <windows.h>
 HANDLE CreateMutex(LPSECURITY_ATTRIBUTES lpAttr, BOOL bInitialOwner, LPCSTR lpName);
 DWORD WaitForSingleObejct(HANDLE handle, DWORD dwMilliseconds);
@@ -68,7 +68,7 @@ BOOL CloseHandle(HANDLE hObject);
 
 以下是Windows版本的示例。
 
-```c
+```
 #include <stdio.h>
 #include <assert.h>
 #include <windows.h>

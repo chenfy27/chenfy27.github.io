@@ -11,7 +11,7 @@ keywords:
 2. 调用File对象的read()/write()方法进行读写文件。
 3. 调用File对象的close()方法关闭文件。
 
-```python
+```
 f = open('/etc/passwd', 'rt')
 content = f.read()
 f.close()
@@ -22,7 +22,7 @@ File对象的read()和readlines()方法都可以读文件，区别是read()返�
 
 ### 方法2：使用with语句
 
-```python
+```
 # read entire file as a single string
 with open('/tmp/test', 'rt') as f:
     data = f.read()

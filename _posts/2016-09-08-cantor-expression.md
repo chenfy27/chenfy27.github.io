@@ -43,7 +43,7 @@ keywords: 算法,cantor,康拓
 
 给定一个1~n的排列，问该排列对应的排名。假定字典序最小的排列对应的排名为1。
 
-```cpp
+```
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -92,7 +92,7 @@ int main()
 
 给定n和排名k，求对应的1~n排列。
 
-```cpp
+```
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2023-09-12T22:36:24+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">陈方勇的网络笔记</title><subtitle>陈方勇的网络笔记
-</subtitle><author><name>chenfy27</name></author><entry><title type="html">leetcode 51-60</title><link href="http://0.0.0.0:4000/2018/08/11/leetcode-51-60.html" rel="alternate" type="text/html" title="leetcode 51-60" /><published>2018-08-11T00:00:00+08:00</published><updated>2018-08-11T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/08/11/leetcode-51-60</id><content type="html" xml:base="http://0.0.0.0:4000/2018/08/11/leetcode-51-60.html"><![CDATA[<h3 id="51n皇后"><a href="https://leetcode-cn.com/problems/n-queens/description/">51.N皇后</a></h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chenfy27.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chenfy27.github.io/" rel="alternate" type="text/html" /><updated>2023-09-12T22:49:15+08:00</updated><id>https://chenfy27.github.io/feed.xml</id><title type="html">陈方勇的网络笔记</title><subtitle>陈方勇的网络笔记
+</subtitle><author><name>chenfy27</name></author><entry><title type="html">leetcode 51-60</title><link href="https://chenfy27.github.io/2018/08/11/leetcode-51-60.html" rel="alternate" type="text/html" title="leetcode 51-60" /><published>2018-08-11T00:00:00+08:00</published><updated>2018-08-11T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/08/11/leetcode-51-60</id><content type="html" xml:base="https://chenfy27.github.io/2018/08/11/leetcode-51-60.html"><![CDATA[<h3 id="51n皇后"><a href="https://leetcode-cn.com/problems/n-queens/description/">51.N皇后</a></h3>
 
 <p>将n个皇后放在nxn的棋盘上，使皇后之间不能相互攻击，求所有可行解。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def solveNQueens(self, n):
         """
         :type n: int
@@ -51,7 +51,7 @@
 
 <p>将n个皇后放在nxn的棋盘上，使皇后之间不能相互攻击，求所有解的数量。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def totalNQueens(self, n):
         """
         :type n: int
@@ -96,7 +96,7 @@
 
 <p>给定一个非空的整数数组，找出一个具有最大和的连续非空子数组，返回其最大和。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def maxSubArray(self, nums):
         """
         :type nums: List[int]
@@ -112,7 +112,7 @@
 
 <p>给定一个包含mxn个元素的矩阵，按顺时针螺旋顺序，返回矩阵中的所有元素。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def spiralOrder(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -147,7 +147,7 @@
 
 <p>给定一个非负整数数组，最初位于第一个位置，数组中每个元素代表在该位置可以跳跃的最大长度，判断是否能够到达最后一个位置。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def canJump(self, nums):
         """
         :type nums: List[int]
@@ -165,7 +165,7 @@
 
 <p>给出一个区间的集合，合并所有重叠的区间。</p>
 
-<pre><code class="language-python"># Definition for an interval.
+<pre><code># Definition for an interval.
 # class Interval:
 #     def __init__(self, s=0, e=0):
 #         self.start = s
@@ -198,7 +198,7 @@ class Solution:
 
 <p>给出一个元重复的，按照区间起始端点排序的区间列表，在列表中插入一个新的区间，要确保插完后新的列表中的区间仍然有序且不重复（如有必果，可以合并区间）。</p>
 
-<pre><code class="language-python"># Definition for an interval.
+<pre><code># Definition for an interval.
 # class Interval:
 #     def __init__(self, s=0, e=0):
 #         self.start = s
@@ -232,7 +232,7 @@ class Solution:
 
 <p>给定一个仅包含大小写字母和空格的字符串，返回其最后一个单词的长度。如不存在最后一个单词，返回0.</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def lengthOfLastWord(self, s):
         """
         :type s: str
@@ -246,7 +246,7 @@ class Solution:
 
 <p>给定一个正整数n，生成一个包含1到n*n所有元素，且元素按顺时针螺旋排列的方形矩阵。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def generateMatrix(self, n):
         """
         :type n: int
@@ -279,7 +279,7 @@ class Solution:
 
 <p>给出集合[1,2,3,…,n]，其所有元素共有n!种排列，求第k小的排列。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def getPermutation(self, n, k):
         """
         :type n: int
@@ -299,11 +299,11 @@ class Solution:
             if n-1 &gt; i:
                 p //= n-1-i
         return ans
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[51.N皇后]]></summary></entry><entry><title type="html">leetcode 41-50</title><link href="http://0.0.0.0:4000/2018/08/10/leetcode-41-50.html" rel="alternate" type="text/html" title="leetcode 41-50" /><published>2018-08-10T00:00:00+08:00</published><updated>2018-08-10T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/08/10/leetcode-41-50</id><content type="html" xml:base="http://0.0.0.0:4000/2018/08/10/leetcode-41-50.html"><![CDATA[<h3 id="41缺失的第一个正整数"><a href="https://leetcode-cn.com/problems/first-missing-positive/description/">41.缺失的第一个正整数</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[51.N皇后]]></summary></entry><entry><title type="html">leetcode 41-50</title><link href="https://chenfy27.github.io/2018/08/10/leetcode-41-50.html" rel="alternate" type="text/html" title="leetcode 41-50" /><published>2018-08-10T00:00:00+08:00</published><updated>2018-08-10T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/08/10/leetcode-41-50</id><content type="html" xml:base="https://chenfy27.github.io/2018/08/10/leetcode-41-50.html"><![CDATA[<h3 id="41缺失的第一个正整数"><a href="https://leetcode-cn.com/problems/first-missing-positive/description/">41.缺失的第一个正整数</a></h3>
 
 <p>给定一个未排序的整数数组，找出其中没有出现的最小正整数。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def firstMissingPositive(self, nums):
         """
         :type nums: List[int]
@@ -320,7 +320,7 @@ class Solution:
 
 <p>给定n个非负整数表示每个宽度为1的柱子的高度图，计算按此排列的柱子，下雨之后能接多少水。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def trap(self, height):
         """
         :type height: List[int]
@@ -345,7 +345,7 @@ class Solution:
 
 <p>给定两个以字符串形式表示的非负整数num1和num2，求其乘积，也用字符串表示。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def multiply(self, num1, num2):
         """
         :type num1: str
@@ -359,7 +359,7 @@ class Solution:
 
 <p>给定一个字符串s和一个字符模式p，实现一个支持'?'和'*'的通配匹配。</p>
 
-<pre><code class="language-python">class Solution(object):
+<pre><code>class Solution(object):
     def isMatch(self, s, p):
         ls, lp = len(s), len(p)
         dp = [[False for c in range(ls+1)] for r in range(lp+1)]
@@ -379,7 +379,7 @@ class Solution:
 
 <p>给定一个非负整数数组，最初位于数组的第一个位置，数组中每个元素代表在该位置可以跳跃的最大长度，用最少的步数到达最后一个位置。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def jump(self, nums):
         """
         :type nums: List[int]
@@ -399,7 +399,7 @@ class Solution:
 
 <p>给定一个没有重复数字的序列，返回其所有可能的全排列。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def permute(self, nums):
         """
         :type nums: List[int]
@@ -424,7 +424,7 @@ class Solution:
 
 <p>给定一个可包含重复数字的序列，返回所有不重复的全排列。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def permuteUnique(self, nums):
         """
         :type nums: List[int]
@@ -448,7 +448,7 @@ class Solution:
 
 <p>给定一个nxn的二维矩阵表示一个图像，将图像顺时针旋转90度。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def rotate(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -470,7 +470,7 @@ class Solution:
 
 <p>给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def groupAnagrams(self, strs):
         """
         :type strs: List[str]
@@ -493,7 +493,7 @@ class Solution:
 
 <p>实现pow(x,n)，即计算x的n次幂。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def myPow(self, x, n):
         """
         :type x: float
@@ -501,11 +501,11 @@ class Solution:
         :rtype: float
         """
         return pow(x, n)
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[41.缺失的第一个正整数]]></summary></entry><entry><title type="html">leetcode 31-40</title><link href="http://0.0.0.0:4000/2018/07/02/leetcode-31-40.html" rel="alternate" type="text/html" title="leetcode 31-40" /><published>2018-07-02T00:00:00+08:00</published><updated>2018-07-02T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/07/02/leetcode-31-40</id><content type="html" xml:base="http://0.0.0.0:4000/2018/07/02/leetcode-31-40.html"><![CDATA[<h3 id="31下一个排列"><a href="https://leetcode-cn.com/problems/next-permutation/description/">31.下一个排列</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[41.缺失的第一个正整数]]></summary></entry><entry><title type="html">leetcode 31-40</title><link href="https://chenfy27.github.io/2018/07/02/leetcode-31-40.html" rel="alternate" type="text/html" title="leetcode 31-40" /><published>2018-07-02T00:00:00+08:00</published><updated>2018-07-02T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/07/02/leetcode-31-40</id><content type="html" xml:base="https://chenfy27.github.io/2018/07/02/leetcode-31-40.html"><![CDATA[<h3 id="31下一个排列"><a href="https://leetcode-cn.com/problems/next-permutation/description/">31.下一个排列</a></h3>
 
 <p>给出一组由正整数构成的序列，要求重排得到字典序中下一个更大的排列，如不存在则排成最小排列，要求原地修改。</p>
 
-<pre><code class="language-python">class Solution:        
+<pre><code>class Solution:        
     def nextPermutation(self, nums):
         """
         :type nums: List[int]
@@ -535,7 +535,7 @@ class Solution:
 
 <p>给定一个只包含'('和')'的字符串，找出最长的包含有效括号的子串的长度。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def longestValidParentheses(self, s):
         """
         :type s: str
@@ -558,7 +558,7 @@ class Solution:
 
 <p>假设按照升序排序的数组在预先未知的某个点上进行了旋转，现要在数组中搜索一个给定的目标值，如果存在则返回索引，不存在返回-1。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def search(self, nums, target):
         """
         :type nums: List[int]
@@ -599,7 +599,7 @@ class Solution:
 
 <p>给定一个按照升序排列的整数数组和一个目标值，找出给定目标值在数组中的开始位置和结束位置，如不存在，则返回[-1,-1]。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def searchRange(self, nums, target):
         """
         :type nums: List[int]
@@ -646,7 +646,7 @@ class Solution:
 
 <p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果不存在，则返回它将会被按顺序插入的位置。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def searchInsert(self, nums, target):
         """
         :type nums: List[int]
@@ -670,7 +670,7 @@ class Solution:
 
 <p>判断一个9x9的数独是否有效，注意给定的数独序列只包含数字1-9和字符'.'，一个有效的数独不一定是可解的。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def isValidSudoku(self, board):
         """
         :type board: List[List[str]]
@@ -713,7 +713,7 @@ class Solution:
 
 <p>给定一个只包含数字1-9和字符'.'的数独序列，其中'.'代表未确定的数字，解出该数独。输入保证有唯一解。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def solveSudoku(self, board):
         """
         :type board: List[List[str]]
@@ -770,7 +770,7 @@ class Solution:
 
 <p>报数序列是指一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。给定一个正整数n，输出报数序列的第n项。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def countAndSay(self, n):
         """
         :type n: int
@@ -795,7 +795,7 @@ class Solution:
 
 <p>给定一个无重复元素的数组candidates和一个目标数target，找出candidates中所有可以使数字和为target的组合，注意candidates中的数字可以无限制重复被选取，保证candidates中的数以及target都是正整数。输出结果要求不能包含重复的组合。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def combinationSum(self, candidates, target):
         """
         :type candidates: List[int]
@@ -822,7 +822,7 @@ class Solution:
 
 <p>给定一个数组candidates和一个目标数target，找出candidates中所有可以使数字和为target的组合，注意candidates中的数字在每个组合中最多只能使用一次，保证candidates中的数以及target都是正整数，要求解集不能包含重复的组合。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def combinationSum2(self, candidates, target):
         """
         :type candidates: List[int]
@@ -844,11 +844,11 @@ class Solution:
         candidates.sort()
         dfs(0, 0, [], ans, candidates, target)
         return sorted(list(ans))
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[31.下一个排列]]></summary></entry><entry><title type="html">leetcode 21-30</title><link href="http://0.0.0.0:4000/2018/07/01/leetcode-21-30.html" rel="alternate" type="text/html" title="leetcode 21-30" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/07/01/leetcode-21-30</id><content type="html" xml:base="http://0.0.0.0:4000/2018/07/01/leetcode-21-30.html"><![CDATA[<h3 id="21合并两个有序链表"><a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/">21.合并两个有序链表</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[31.下一个排列]]></summary></entry><entry><title type="html">leetcode 21-30</title><link href="https://chenfy27.github.io/2018/07/01/leetcode-21-30.html" rel="alternate" type="text/html" title="leetcode 21-30" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/07/01/leetcode-21-30</id><content type="html" xml:base="https://chenfy27.github.io/2018/07/01/leetcode-21-30.html"><![CDATA[<h3 id="21合并两个有序链表"><a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/">21.合并两个有序链表</a></h3>
 
 <p>将两个有序链表合并为一个新的有序链表并返回。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -881,7 +881,7 @@ class Solution:
 
 <p>给出n代表生成括号的对数，要求生成所有可能并且有效的括号组合。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def generateParenthesis(self, n):
         """
         :type n: int
@@ -906,7 +906,7 @@ class Solution:
 
 <p>合并K个排序链表，返回合并后的排序链表。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -954,7 +954,7 @@ class Solution:
 
 <p>给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -989,7 +989,7 @@ class Solution:
 
 <p>给出一个链表，每K个节点一组进行翻转，并返回翻转后的链表。K为正整数，它的值不超过链表长度。如果节点数不是K的倍数，那么最后整余节点保持原来的顺序。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -1025,7 +1025,7 @@ class Solution:
 
 <p>给定一个排序数组，原地删除重复出现的元素，返回新数组的长度。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def removeDuplicates(self, nums):
         """
         :type nums: List[int]
@@ -1045,7 +1045,7 @@ class Solution:
 
 <p>给定一个数组nums和一个值val，原地移除所有数值等于val的元素，返回新数组的长度。注意，元素的顺序可以改变，不需要考虑数组中超出新长度后面的元素。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def removeElement(self, nums, val):
         """
         :type nums: List[int]
@@ -1071,7 +1071,7 @@ class Solution:
 
 <p>给定一个haystack字符串和一个needle字符串，在haystack中找出第一次出现needle的位置，如不存在则返回-1。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def strStr(self, haystack, needle):
         """
         :type haystack: str
@@ -1089,7 +1089,7 @@ class Solution:
 
 <p>给定两个32位有符号的整数，返回它们的商，保证除数不为0。如果溢出，则返回最大值。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def divide(self, dividend, divisor):
         """
         :type dividend: int
@@ -1107,7 +1107,7 @@ class Solution:
 
 <p>给定一个字符串s和一些长度相同的单词words，在s中找出可以恰好串联words中所有单词的子串的起始位置。注意子串要与words中的单词完全匹配，中间不能有其他字符，但顺序不做要求。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def findSubstring(self, s, words):
         """
         :type s: str
@@ -1127,11 +1127,11 @@ class Solution:
             if tmp == std:
                 ans.append(i)
         return ans
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[21.合并两个有序链表]]></summary></entry><entry><title type="html">leetcode 11-20</title><link href="http://0.0.0.0:4000/2018/06/29/leetcode-11-20.html" rel="alternate" type="text/html" title="leetcode 11-20" /><published>2018-06-29T00:00:00+08:00</published><updated>2018-06-29T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/29/leetcode-11-20</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/29/leetcode-11-20.html"><![CDATA[<h3 id="11盛水最多的容器"><a href="https://leetcode-cn.com/problems/container-with-most-water/description/">11.盛水最多的容器</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[21.合并两个有序链表]]></summary></entry><entry><title type="html">leetcode 11-20</title><link href="https://chenfy27.github.io/2018/06/29/leetcode-11-20.html" rel="alternate" type="text/html" title="leetcode 11-20" /><published>2018-06-29T00:00:00+08:00</published><updated>2018-06-29T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/29/leetcode-11-20</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/29/leetcode-11-20.html"><![CDATA[<h3 id="11盛水最多的容器"><a href="https://leetcode-cn.com/problems/container-with-most-water/description/">11.盛水最多的容器</a></h3>
 
 <p>给定n个非负整数a[n]，每个数代表一个点(i,a[i])，画n条垂线，每条垂线的端点分别为(i,a[i])和(i,0)，选两条线，使它们与x轴构成的容器可以容纳最多的水。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def maxArea(self, height):
         """
         :type height: List[int]
@@ -1152,7 +1152,7 @@ class Solution:
 
 <p>在罗马数字表示法中，字母"IVXLCDM"分别代表1, 5, 10, 50, 100, 500, 1000。给定一个1〜3999的整数，将其转成罗马数字。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def intToRoman(self, num):
         """
         :type num: int
@@ -1175,7 +1175,7 @@ class Solution:
 
 <p>给定一个范围在1〜3999的罗马数字，将其转换成整数。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def romanToInt(self, s):
         """
         :type s: str
@@ -1195,7 +1195,7 @@ class Solution:
 
 <p>输入一个字符串数组，求所有字符串的最长公共前缀。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def longestCommonPrefix(self, strs):
         """
         :type strs: List[str]
@@ -1223,7 +1223,7 @@ class Solution:
 
 <p>给定一个包含n个整数的数组nums[n]，判断nums中是否存在三个元素a,b,c使得a+b+c=0？找出所有满足条件且不重复的三元组。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def threeSum(self, nums):
         """
         :type nums: List[int]
@@ -1253,7 +1253,7 @@ class Solution:
 
 <p>给定一个包括n个整数的数组nums和一个目标值target，找出nums中的三个整数，使得它们的和与target最接近，返回这三个数的和。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def threeSumClosest(self, nums, target):
         """
         :type nums: List[int]
@@ -1286,7 +1286,7 @@ class Solution:
 
 <p>在手机上数字2-9的键对应着字母a-z，给定一个仅包含数字2-9的字符串，返回所有它能表示的字母组合。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def letterCombinations(self, digits):
         """
         :type digits: str
@@ -1305,7 +1305,7 @@ class Solution:
 
 <p>给定一个包含n个整数的数组nums和一个目标值target，判断nums中是否存在四个元素a,b,c,d使得a+b+c+d=target，找出所有满足条件且不重复的四元组。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def fourSum(self, nums, target):
         """
         :type nums: List[int]
@@ -1340,7 +1340,7 @@ class Solution:
 
 <p>给定一个链表，删除倒数第n个节点，并返回链表的头结点，给定的n保证有效。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -1368,7 +1368,7 @@ class Solution:
 
 <p>给定一个只包含大中小括号的字符串，判断字符串是否有效。注意空字符串有效。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def isValid(self, s):
         """
         :type s: str
@@ -1385,13 +1385,13 @@ class Solution:
                 else:
                     return False
         return len(a) == 0
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[11.盛水最多的容器]]></summary></entry><entry><title type="html">leetcode 1-10</title><link href="http://0.0.0.0:4000/2018/06/26/leetcode-1-10.html" rel="alternate" type="text/html" title="leetcode 1-10" /><published>2018-06-26T00:00:00+08:00</published><updated>2018-06-26T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/26/leetcode-1-10</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/26/leetcode-1-10.html"><![CDATA[<p>为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。</p>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[11.盛水最多的容器]]></summary></entry><entry><title type="html">leetcode 1-10</title><link href="https://chenfy27.github.io/2018/06/26/leetcode-1-10.html" rel="alternate" type="text/html" title="leetcode 1-10" /><published>2018-06-26T00:00:00+08:00</published><updated>2018-06-26T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/26/leetcode-1-10</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/26/leetcode-1-10.html"><![CDATA[<p>为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。</p>
 
 <h3 id="1两数之和"><a href="https://leetcode-cn.com/problems/two-sum/description/">1.两数之和</a></h3>
 
 <p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数，输入保证有唯一解。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -1413,7 +1413,7 @@ class Solution:
 
 <p>给定两个非空链表来表示两个非负整数，位数按照逆序方式存储，每个节点存一位数字，将两数相加并按该表式法返回结果。注意，数字没有前导0。</p>
 
-<pre><code class="language-python"># Definition for singly-linked list.
+<pre><code># Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -1450,7 +1450,7 @@ class Solution:
 
 <p>给定一个字符串，找出不含有重复字符的最长子串的长度。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str
@@ -1472,7 +1472,7 @@ class Solution:
 
 <p>给定两个大小分别为m和n的有序数组nums1与nums2，求这两个有序数组合并后的中位数。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         """
         :type nums1: List[int]
@@ -1489,7 +1489,7 @@ class Solution:
 
 <p>给定一个字符串s，找到s中任意一个最长的回文子串。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def longestPalindrome(self, s):
         """
         :type s: str
@@ -1521,7 +1521,7 @@ class Solution:
 
 <p>将字符串以Z字形排列成给定的行数，然后从左往右逐行读取字符得到新串，返回该新串。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def convert(self, s, numRows):
         """
         :type s: str
@@ -1548,7 +1548,7 @@ class Solution:
 
 <p>给定一个32位有符号整数，将数字进行反转，如反转后会溢出，则返回0。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def reverse(self, x):
         """
         :type x: int
@@ -1578,7 +1578,7 @@ class Solution:
   <li>超出INT_MAX或INT_MIN，返回INT_MAX与INT_MIN</li>
 </ul>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def myAtoi(self, str):
         """
         :type str: str
@@ -1613,7 +1613,7 @@ class Solution:
 
 <p>判断一个整数是否是回文数，即正序读和倒序读是一样的。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def isPalindrome(self, x):
         """
         :type x: int
@@ -1627,7 +1627,7 @@ class Solution:
 
 <p>给定一个字符串s和一个字符模式p，实现支持点号和星号的正则表达式匹配。</p>
 
-<pre><code class="language-python">class Solution:
+<pre><code>class Solution:
     def isMatch(self, s, p):
         """
         :type s: str
@@ -1637,13 +1637,13 @@ class Solution:
         p = '^' + p + '$'
         ok = re.match(p, s)
         return True if ok else False
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。]]></summary></entry><entry><title type="html">python中的栈和队列</title><link href="http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python.html" rel="alternate" type="text/html" title="python中的栈和队列" /><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python.html"><![CDATA[<p>栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。</p>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。]]></summary></entry><entry><title type="html">python中的栈和队列</title><link href="https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html" rel="alternate" type="text/html" title="python中的栈和队列" /><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html"><![CDATA[<p>栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。</p>
 
 <h3 id="栈">栈</h3>
 
 <p>python内置了list类型，通过它的append和pop方法就可以实现栈的功能，由于各项操作都是O(1)的，速度还算快。</p>
 
-<pre><code class="language-python">class Stack():
+<pre><code>class Stack():
     def __init__(self):
         self.data = []
     
@@ -1705,7 +1705,7 @@ class Solution:
 
 <p>下面编写代码对上述三种数据结构做性能测试。</p>
 
-<pre><code class="language-python">import logging as log
+<pre><code>import logging as log
 from collections import deque
 import heapq
 
@@ -1775,7 +1775,7 @@ user       0m1.790s
 sys        0m0.078s
 </code></pre>
 
-<p>运行速度非常快，接近C/C++的性能。</p>]]></content><author><name>chenfy27</name></author><category term="python" /><summary type="html"><![CDATA[栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。]]></summary></entry><entry><title type="html">stl常用容器方法</title><link href="http://0.0.0.0:4000/2018/06/22/common-stl-containers.html" rel="alternate" type="text/html" title="stl常用容器方法" /><published>2018-06-22T00:00:00+08:00</published><updated>2018-06-22T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/22/common-stl-containers</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/22/common-stl-containers.html"><![CDATA[<h3 id="vector">vector</h3>
+<p>运行速度非常快，接近C/C++的性能。</p>]]></content><author><name>chenfy27</name></author><category term="python" /><summary type="html"><![CDATA[栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。]]></summary></entry><entry><title type="html">stl常用容器方法</title><link href="https://chenfy27.github.io/2018/06/22/common-stl-containers.html" rel="alternate" type="text/html" title="stl常用容器方法" /><published>2018-06-22T00:00:00+08:00</published><updated>2018-06-22T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/22/common-stl-containers</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/22/common-stl-containers.html"><![CDATA[<h3 id="vector">vector</h3>
 
 <ul>
   <li>push_back(val)</li>
@@ -1881,7 +1881,7 @@ sys        0m0.078s
   <li>lower_bound(key) (for set and multiset)</li>
   <li>upper_bound(key) (for set and multiset)</li>
   <li>equal_range(key)</li>
-</ul>]]></content><author><name>chenfy27</name></author><category term="cpp" /><summary type="html"><![CDATA[vector]]></summary></entry><entry><title type="html">线性回归之最小二乘法</title><link href="http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares.html" rel="alternate" type="text/html" title="线性回归之最小二乘法" /><published>2018-06-21T00:00:00+08:00</published><updated>2018-06-21T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares.html"><![CDATA[<h3 id="问题描述">问题描述</h3>
+</ul>]]></content><author><name>chenfy27</name></author><category term="cpp" /><summary type="html"><![CDATA[vector]]></summary></entry><entry><title type="html">线性回归之最小二乘法</title><link href="https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html" rel="alternate" type="text/html" title="线性回归之最小二乘法" /><published>2018-06-21T00:00:00+08:00</published><updated>2018-06-21T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html"><![CDATA[<h3 id="问题描述">问题描述</h3>
 
 <p>假设自变量\((X_{1}, X_{2},\cdots,X_{n})\)与因变量\(Y\)之间满足某种线性关系：</p>
 
@@ -1923,7 +1923,7 @@ sys        0m0.078s
 
 <p>假设有线性关系\(Y = 9 + 4X_{1} + X_{2} + 2X_{3}\)，下面随机生成一些数据作为样本，用于求解系数。</p>
 
-<pre><code class="language-python">import random
+<pre><code>import random
 
 def func(x1, x2, x3):
     return 9 + 4*x1 + x2 + 2*x3
@@ -1947,7 +1947,7 @@ for i in range(5):
 
 <p>下面根据最小二乘法的结论来求解参数。</p>
 
-<pre><code class="language-python">import numpy as np
+<pre><code>import numpy as np
 from numpy import dot
 from numpy.linalg import inv
 
@@ -1970,7 +1970,7 @@ print(theta)
 
 <p>再如，假定国内生产总值GDP与消费Consumption、货币供应量MO、进出口总额EM以及投资Investment这4个因素存在某种线性关系，<a href="/data/yeardata.csv">这里</a>提供了一些样本数据，试着量化该线性关系。</p>
 
-<pre><code class="language-python">import pandas as pd
+<pre><code>import pandas as pd
 import numpy as np
 from numpy import dot
 from numpy.linalg import inv
@@ -1992,13 +1992,13 @@ print(theta)
 <pre><code>[-94.51398652   1.32825128   2.06138007   0.38959829   0.11848647]
 </code></pre>
 
-<p>即\(GDP = -94.514 + 1.328Consumption + 2.061MO + 0.390EM + 0.118Investment\)。</p>]]></content><author><name>chenfy27</name></author><category term="机器" /><summary type="html"><![CDATA[问题描述]]></summary></entry><entry><title type="html">支持多语言gettext</title><link href="http://0.0.0.0:4000/2018/06/18/gettext.html" rel="alternate" type="text/html" title="支持多语言gettext" /><published>2018-06-18T00:00:00+08:00</published><updated>2018-06-18T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/18/gettext</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/18/gettext.html"><![CDATA[<p>有时，程序展现给用户的信息需要支持多种语言，并且允许在语言之间做灵活的切换，最为常见的场景是支持中英文，GNU的gettext是一个支持多语言的成熟解决方案。</p>
+<p>即\(GDP = -94.514 + 1.328Consumption + 2.061MO + 0.390EM + 0.118Investment\)。</p>]]></content><author><name>chenfy27</name></author><category term="机器" /><summary type="html"><![CDATA[问题描述]]></summary></entry><entry><title type="html">支持多语言gettext</title><link href="https://chenfy27.github.io/2018/06/18/gettext.html" rel="alternate" type="text/html" title="支持多语言gettext" /><published>2018-06-18T00:00:00+08:00</published><updated>2018-06-18T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/18/gettext</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/18/gettext.html"><![CDATA[<p>有时，程序展现给用户的信息需要支持多种语言，并且允许在语言之间做灵活的切换，最为常见的场景是支持中英文，GNU的gettext是一个支持多语言的成熟解决方案。</p>
 
 <h3 id="编程接口">编程接口</h3>
 
 <p>使用gettext需要用到的API如下所示：</p>
 
-<pre><code class="language-c">#include &lt;locale.h&gt;
+<pre><code>#include &lt;locale.h&gt;
 #include &lt;libintl.h&gt;
 
 char* setlocale(int category, const char *locale);
@@ -2017,7 +2017,7 @@ char* textdomain(const char *domainname);
 
 <p>以输出hello为例，以下是相关源码hello.c，假设mo文件取名为scott.mo。</p>
 
-<pre><code class="language-c">#include &lt;stdio.h&gt;
+<pre><code>#include &lt;stdio.h&gt;
 #include &lt;locale.h&gt;
 #include &lt;libintl.h&gt;
 

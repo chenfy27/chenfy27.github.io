@@ -17,7 +17,7 @@ keywords:
 
 python提供了正则表达式库re，函数sub可完成字符串替换工作，其原型为：`re.sub(pattern, newstr, string)`，可在后面加参数指定替换次数与是否区分大小写，如count=1, flags=re.I表示最多替换1次，不区分大小写。默认全部替换，区分大小写。
 
-```python
+```
 import sys
 import re
 for line in sys.stdin:
@@ -27,7 +27,7 @@ for line in sys.stdin:
 
 C++11标准提供了正则表达式接口，以下是同样功能的C++实现。
 
-```cpp
+```
 #include <iostream>
 #include <string>
 #include <regex>
@@ -43,7 +43,7 @@ int main() {
 
 Linux环境下C语言也有regex接口，但功能偏弱，不支持中文。
 
-```c
+```
 #include <regex.h>
 int RegMatch(const char *str, const char *pat) {
     regex_t reg;

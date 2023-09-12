@@ -11,7 +11,7 @@ tag:
 
 可以看成普通的区间最值问题，用线段树和ST表来做，时间复杂度为O(nlogn)，比前一种方法要快，但仍会超时，下面是用线段树来做。
 
-```cpp
+```
 #include <iostream>
 #include <cstdio>
 #include <climits>
@@ -60,7 +60,7 @@ int main() {
 
 另外一种做法是用map来维护窗口中的元素，取最大和最小都是O(logk)，总时间复杂度为O(nlogk)，编码简单些，但也会超时。
 
-```cpp
+```
 #include <map>
 #include <vector>
 #include <cstdio>
@@ -93,7 +93,7 @@ int main() {
 
 最后是用单调队列来做，时间复杂度为O(n)，由于POJ没开O2优化，用STL可能会超时，可以用数组来模拟队列，并加上快速IO。
 
-```cpp
+```
 #include <cstdio>
 #include <deque>
 #include <vector>

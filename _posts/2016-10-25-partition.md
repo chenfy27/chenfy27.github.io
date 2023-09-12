@@ -15,7 +15,7 @@ partition算法建立在循环不变式上，设无序数组为A[n]，下标小�
 
 ### 快速排序：
 
-```cpp
+```
 int Partition(int *a, int lo, int hi) {
     int i, j;
     for (i = lo - 1, j = lo; j <= hi; j++)
@@ -27,7 +27,7 @@ int Partition(int *a, int lo, int hi) {
 
 注：这种做法虽然时间复杂度也是O(n)，但交换次数比较多，常数大，快排建议两端齐扫的写法。
 
-```cpp
+```
 void Partition(int *a, int lo, int hi) {
     int i = lo, j = hi, p = a[hi], t;
     while (i <= j) {
@@ -43,7 +43,7 @@ void Partition(int *a, int lo, int hi) {
 
 ### [奇偶分割数组问题](http://www.lintcode.com/zh-cn/problem/partition-array-by-odd-and-even/)：
 
-```cpp
+```
 void PartitionArray(vector<int> &nums) {
     for (int i = -1, j = 0; j < nums.size(); j++)
         if (nums[j] & 1)
@@ -53,7 +53,7 @@ void PartitionArray(vector<int> &nums) {
 
 高效写法：
 
-```cpp
+```
 void PartitionArray(vector<int> &nums) {
     int i = 0, j = nums.size() - 1;
     while (i <= j) {
@@ -69,7 +69,7 @@ void PartitionArray(vector<int> &nums) {
 
 ### [数组划分问题](http://www.lintcode.com/zh-cn/problem/partition-array/)：
 
-```cpp
+```
 int PartitionArray(vector<int> &nums, int k) {
     int i, j;
     for (i = -1, j = 0; j < nums.size(); j++)
@@ -85,7 +85,7 @@ int PartitionArray(vector<int> &nums, int k) {
 
 思路类似，二分partition是遇到满足条件的就往前扔，三分partition则是遇到小的往前扔，遇到大的往后扔，相等的直接跳过。
 
-```cpp
+```
 int PartitionArray(vector<int> &nums, int k) {
     int i, j, n;
     for (i = -1, j = 0, n = nums.size(); j < n; j++) {

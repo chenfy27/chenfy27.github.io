@@ -11,7 +11,7 @@ tag:
 
 分析：二分答案，对于给定的绳子数，dfs遍历整棵树，求出各个节点的负重，检查是否会断，时间复杂度为O(n)，总时间复杂度为O(nlogn)。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;
@@ -58,7 +58,7 @@ int main() {
 
 分析：任选一个（比如编号为1）节点作为根，定义son[i]表示以编号为i的节点为根的子树包含的节点数，dp[i]为所求。第1次dfs统计出son[i]，顺带可计算出dp[1]，然后进行递推。设x是一个非根节点，其父节点为y，并且dp[y]已算出，那么dp[x]可分两部分算出：以x为根的子树中的节点，到x的距离比到y的距离少1，这样的节点有son[x]个；其余节点到x的距离比到y的距离多1，这样的节点有(n-num[x])个。
 
-```cpp
+```
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long LL;

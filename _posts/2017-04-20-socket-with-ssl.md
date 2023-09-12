@@ -13,7 +13,7 @@ keywords:
 
 ### 服务端
 
-```c
+```
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -100,7 +100,7 @@ int main(int argc, char *argv[]) {
 
 ### 客户端
 
-```c
+```
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>

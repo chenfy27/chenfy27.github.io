@@ -9,7 +9,7 @@ keywords:
 
 有些时候，上述两种声明仍然无法满足需要，例如存入优先队列中的不是整数，而是结构体，这时应自定义比较函数。举例如下：
 
-```cpp
+```
 struct ST {
     int a, b;
     bool operator<(const ST &x) const {
@@ -21,7 +21,7 @@ priority_queue<ST> pq;
 
 这是另外一种写法：
 
-```cpp
+```
 struct ST {
     int a, b;
     friend bool operator<(const ST &x, const ST &y) {
@@ -33,7 +33,7 @@ priority_queue<ST> pq;
 
 如果既要用大根堆，又要用小根堆，可以同时重载小于和大于符号。
 
-```cpp
+```
 struct ST {
     int a, b;
     bool operator<(const ST &x) const {return a < x.a;}

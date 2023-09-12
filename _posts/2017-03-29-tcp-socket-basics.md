@@ -7,7 +7,7 @@ keywords:
 
 ### 字节序转换函数
 
-```c
+```
 unsigned short htons(unsigned short);
 unsigned short ntohs(unsigned short);
 unsigned long htonl(unsigned long);
@@ -16,7 +16,7 @@ unsigned long ntohl(unsigned long);
 
 ### 地址转换函数
 
-```c
+```
 in_addr_t inet_addr(const char *ip);
 int inet_aton(const char *ip, struct in_addr *addr);
 char* inet_ntoa(struct in_addr addr);
@@ -24,7 +24,7 @@ char* inet_ntoa(struct in_addr addr);
 
 ### Linux版最简回射服务器
 
-```c
+```
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 
 ### Linux版最简回射客户端
 
-```c
+```
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
 
 ### Windows版最简回射服务器
 
-```c
+```
 #include <winsock.h>
 #pragma comment(lib, "ws2_32.lib")
 SOCKET ListenAt(short port) {
@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
 
 ### Windows版最简回射客户端
 
-```c
+```
 #include <stdio.h>
 #include <winsock.h>
 #pragma comment(lib, "ws2_32.lib")

@@ -62,7 +62,7 @@ x  -  y      = 1
 
 ### [例题](http://hihocoder.com/problemset/problem/1195)与代码
 
-```c
+```
 #include <stdio.h>
 #include <math.h>
 #define EPS 1e-6

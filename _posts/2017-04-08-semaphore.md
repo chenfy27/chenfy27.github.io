@@ -13,7 +13,7 @@ keywords:
 
 posix信号量有命名和匿名两种，匿名信号量编程接口如下：
 
-```c
+```
 #include <semaphore.h>
 int sem_init(sem_t *sem, int pshared, unsigned int value);
 int sem_wait(sem_t *sem);
@@ -23,7 +23,7 @@ int sem_destroy(sem_t *sem);
 
 命名信号量的创建与销毁方式不同，编程接口如下：
 
-```c
+```
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <semaphore.h>
@@ -38,7 +38,7 @@ int sem_unlink(const char *name);
 
 下面的例子用信号量控制线程对共享资源的独占访问，功能与互斥锁类似。
 
-```c
+```
 #include <stdio.h>
 #include <pthread.h>
 #include <semaphore.h>
