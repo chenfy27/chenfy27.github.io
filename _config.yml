@@ -4,7 +4,7 @@ email: chenfy27@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   陈方勇的网络笔记
 baseurl: "/blog/" # the subpath of your site, e.g. /blog/
-url: https://chenfy27.gitee.io # the base hostname & protocol for your site
+url: https://chenfy27.github.io # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: chenfy27
 
