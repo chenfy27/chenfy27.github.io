@@ -4,10 +4,10 @@
     <title>陈方勇的网络笔记</title>
     <description>陈方勇的网络笔记
 </description>
-    <link>https://chenfy27.github.io/</link>
-    <atom:link href="https://chenfy27.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Sep 2023 23:22:58 +0800</pubDate>
-    <lastBuildDate>Tue, 12 Sep 2023 23:22:58 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Sep 2023 08:05:37 +0800</pubDate>
+    <lastBuildDate>Wed, 13 Sep 2023 08:05:37 +0800</lastBuildDate>
     <generator>Jekyll v4.3.2</generator>
     
       <item>
@@ -25,17 +25,17 @@
         
         def ok(x, y, tab, n):
             for i in range(x):
-                if tab[i][y] == 'Q':
+                if tab[i][y] == &apos;Q&apos;:
                     return False
             i, j = x-1, y-1
             while i &amp;gt;= 0 and j &amp;gt;= 0:
-                if tab[i][j] == 'Q':
+                if tab[i][j] == &apos;Q&apos;:
                     return False
                 i -= 1
                 j -= 1
             i, j = x-1, y+1
             while i &amp;gt;= 0 and j &amp;lt; n:
-                if tab[i][j] == 'Q':
+                if tab[i][j] == &apos;Q&apos;:
                     return False
                 i -= 1
                 j += 1
@@ -45,17 +45,17 @@
             if x == n:
                 t = []
                 for i in tab:
-                    t.append(''.join(i))
+                    t.append(&apos;&apos;.join(i))
                 ans.append(t)
                 return
             for y in range(n):
                 if ok(x, y, tab, n):
-                    tab[x][y] = 'Q'
+                    tab[x][y] = &apos;Q&apos;
                     dfs(x+1, tab, ans, n)
-                    tab[x][y] = '.'
+                    tab[x][y] = &apos;.&apos;
         
         ans = []
-        tab = [['.' for i in range(n)] for j in range(n)]
+        tab = [[&apos;.&apos; for i in range(n)] for j in range(n)]
         dfs(0, tab, ans, n)
         return ans
 &lt;/code&gt;&lt;/pre&gt;
@@ -73,17 +73,17 @@
         
         def ok(x, y, tab, n):
             for i in range(x):
-                if tab[i][y] == 'Q':
+                if tab[i][y] == &apos;Q&apos;:
                     return False
             i, j = x-1, y-1
             while i &amp;gt;= 0 and j &amp;gt;= 0:
-                if tab[i][j] == 'Q':
+                if tab[i][j] == &apos;Q&apos;:
                     return False
                 i -= 1
                 j -= 1
             i, j = x-1, y+1
             while i &amp;gt;= 0 and j &amp;lt; n:
-                if tab[i][j] == 'Q':
+                if tab[i][j] == &apos;Q&apos;:
                     return False
                 i -= 1
                 j += 1
@@ -95,12 +95,12 @@
                 return
             for y in range(n):
                 if ok(x, y, tab, n):
-                    tab[x][y] = 'Q'
+                    tab[x][y] = &apos;Q&apos;
                     dfs(x+1, tab, n, ans)
-                    tab[x][y] = '.'
+                    tab[x][y] = &apos;.&apos;
         
         ans = []
-        tab = [['.' for i in range(n)] for j in range(n)]
+        tab = [[&apos;.&apos; for i in range(n)] for j in range(n)]
         dfs(0, tab, n, ans)
         return len(ans)
 &lt;/code&gt;&lt;/pre&gt;
@@ -304,7 +304,7 @@ class Solution:
         for i in range(1,n):
             p *= i
         k -= 1
-        ans = ''
+        ans = &apos;&apos;
         for i in range(n):
             x, y = divmod(k, p)
             ans += str(z.pop(x))
@@ -315,8 +315,8 @@ class Solution:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sat, 11 Aug 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/08/11/leetcode-51-60.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/08/11/leetcode-51-60.html</guid>
+        <link>http://localhost:4000/2018/08/11/leetcode-51-60.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/11/leetcode-51-60.html</guid>
         
         
         <category>LeetCode</category>
@@ -383,7 +383,7 @@ class Solution:
 
 &lt;h3 id=&quot;44-通配符匹配&quot;&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/wildcard-matching/description/&quot;&gt;44. 通配符匹配&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;给定一个字符串s和一个字符模式p，实现一个支持'?'和'*'的通配匹配。&lt;/p&gt;
+&lt;p&gt;给定一个字符串s和一个字符模式p，实现一个支持&apos;?&apos;和&apos;*&apos;的通配匹配。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class Solution(object):
     def isMatch(self, s, p):
@@ -391,12 +391,12 @@ class Solution:
         dp = [[False for c in range(ls+1)] for r in range(lp+1)]
         dp[0][0] = True
         for i in range(1, lp+1):
-            dp[i][0] = p[i-1] == '*' and dp[i-1][0]
+            dp[i][0] = p[i-1] == &apos;*&apos; and dp[i-1][0]
         for i in range(1, lp+1):
             for j in range(1, ls+1):
-                if p[i-1] == s[j-1] or p[i-1] == '?':
+                if p[i-1] == s[j-1] or p[i-1] == &apos;?&apos;:
                     dp[i][j] = dp[i-1][j-1]
-                elif p[i-1] == '*':
+                elif p[i-1] == &apos;*&apos;:
                     dp[i][j] = dp[i-1][j] or dp[i][j-1]
         return dp[lp][ls]
 &lt;/code&gt;&lt;/pre&gt;
@@ -504,7 +504,7 @@ class Solution:
         &quot;&quot;&quot;
         mp = {}
         for i in strs:
-            k = ''.join(sorted(i))
+            k = &apos;&apos;.join(sorted(i))
             if k in mp:
                 mp[k].append(i)
             else:
@@ -530,8 +530,8 @@ class Solution:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Fri, 10 Aug 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/08/10/leetcode-41-50.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/08/10/leetcode-41-50.html</guid>
+        <link>http://localhost:4000/2018/08/10/leetcode-41-50.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/10/leetcode-41-50.html</guid>
         
         
         <category>LeetCode</category>
@@ -572,7 +572,7 @@ class Solution:
 
 &lt;h3 id=&quot;32最长有效括号&quot;&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/longest-valid-parentheses/description/&quot;&gt;32.最长有效括号&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;给定一个只包含'('和')'的字符串，找出最长的包含有效括号的子串的长度。&lt;/p&gt;
+&lt;p&gt;给定一个只包含&apos;(&apos;和&apos;)&apos;的字符串，找出最长的包含有效括号的子串的长度。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class Solution:
     def longestValidParentheses(self, s):
@@ -583,7 +583,7 @@ class Solution:
         stk = []
         dp = [0] * (len(s)+1)
         for i, j in enumerate(s):
-            if j == '(':
+            if j == &apos;(&apos;:
                 stk.append(i)
             else:
                 if stk:
@@ -707,7 +707,7 @@ class Solution:
 
 &lt;h3 id=&quot;36有效的数独&quot;&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/valid-sudoku/description/&quot;&gt;36.有效的数独&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;判断一个9x9的数独是否有效，注意给定的数独序列只包含数字1-9和字符'.'，一个有效的数独不一定是可解的。&lt;/p&gt;
+&lt;p&gt;判断一个9x9的数独是否有效，注意给定的数独序列只包含数字1-9和字符&apos;.&apos;，一个有效的数独不一定是可解的。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class Solution:
     def isValidSudoku(self, board):
@@ -718,7 +718,7 @@ class Solution:
         def ok(T):
             s = set()
             for i in T:
-                if i == '.': continue
+                if i == &apos;.&apos;: continue
                 if i in s: return False
                 s.add(i)
             return True
@@ -750,7 +750,7 @@ class Solution:
 
 &lt;h3 id=&quot;37解数独&quot;&gt;&lt;a href=&quot;https://leetcode-cn.com/problems/sudoku-solver/description/&quot;&gt;37.解数独&lt;/a&gt;&lt;/h3&gt;
 
-&lt;p&gt;给定一个只包含数字1-9和字符'.'的数独序列，其中'.'代表未确定的数字，解出该数独。输入保证有唯一解。&lt;/p&gt;
+&lt;p&gt;给定一个只包含数字1-9和字符&apos;.&apos;的数独序列，其中&apos;.&apos;代表未确定的数字，解出该数独。输入保证有唯一解。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;class Solution:
     def solveSudoku(self, board):
@@ -762,7 +762,7 @@ class Solution:
         def ok(T):
             s = set()
             for i in T:
-                if i == '.': continue
+                if i == &apos;.&apos;: continue
                 if i in s: return False
                 s.add(i)
             return True
@@ -792,14 +792,14 @@ class Solution:
         def dfs(n):
             if n == 81: return True
             x, y = n//9, n%9
-            if board[x][y] != '.':
+            if board[x][y] != &apos;.&apos;:
                 return dfs(n+1)
             for i in range(1,10):
                 board[x][y] = str(i)
                 if check(x, y):
                     if dfs(n+1):
                         return True
-            board[x][y] = '.'
+            board[x][y] = &apos;.&apos;
             return False
         
         dfs(0)
@@ -815,9 +815,9 @@ class Solution:
         :type n: int
         :rtype: str
         &quot;&quot;&quot;
-        ans = '1'
+        ans = &apos;1&apos;
         for i in range(1, n):
-            tmp = ''
+            tmp = &apos;&apos;
             idx = 0
             while idx &amp;lt; len(ans):
                 tag = ans[idx]
@@ -886,8 +886,8 @@ class Solution:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Mon, 02 Jul 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/07/02/leetcode-31-40.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/07/02/leetcode-31-40.html</guid>
+        <link>http://localhost:4000/2018/07/02/leetcode-31-40.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/02/leetcode-31-40.html</guid>
         
         
         <category>LeetCode</category>
@@ -946,11 +946,11 @@ class Solution:
             if L == 0 and R == 0:
                 ans.append(s)
                 return
-            dfs(L-1, R, s+'(', ans)
-            dfs(L, R-1, s+')', ans)
+            dfs(L-1, R, s+&apos;(&apos;, ans)
+            dfs(L, R-1, s+&apos;)&apos;, ans)
 
         ans = []
-        dfs(n, n, '', ans)
+        dfs(n, n, &apos;&apos;, ans)
         return ans
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1182,8 +1182,8 @@ class Solution:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Sun, 01 Jul 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/07/01/leetcode-21-30.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/07/01/leetcode-21-30.html</guid>
+        <link>http://localhost:4000/2018/07/01/leetcode-21-30.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/01/leetcode-21-30.html</guid>
         
         
         <category>LeetCode</category>
@@ -1224,8 +1224,8 @@ class Solution:
         :rtype: str
         &quot;&quot;&quot;
         a = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
-        b = ['I', 'IV', 'V', 'IX', 'X', 'XL', 'L', 'XC', 'C', 'CD', 'D', 'CM', 'M']
-        ans = ''
+        b = [&apos;I&apos;, &apos;IV&apos;, &apos;V&apos;, &apos;IX&apos;, &apos;X&apos;, &apos;XL&apos;, &apos;L&apos;, &apos;XC&apos;, &apos;C&apos;, &apos;CD&apos;, &apos;D&apos;, &apos;CM&apos;, &apos;M&apos;]
+        ans = &apos;&apos;
         x = len(a) - 1
         while num &amp;gt; 0:
             if num &amp;gt;= a[x]:
@@ -1246,7 +1246,7 @@ class Solution:
         :type s: str
         :rtype: int
         &quot;&quot;&quot;
-        a = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
+        a = {&apos;I&apos;:1, &apos;V&apos;:5, &apos;X&apos;:10, &apos;L&apos;:50, &apos;C&apos;:100, &apos;D&apos;:500, &apos;M&apos;:1000}
         ans = 0
         for i in range(len(s)):
             if i+1 &amp;lt; len(s) and a[s[i]] &amp;lt; a[s[i+1]]:
@@ -1268,14 +1268,14 @@ class Solution:
         &quot;&quot;&quot;
 
         def prefix(a, b):
-            ret = ''
+            ret = &apos;&apos;
             for i, j in zip(a, b):
                 if i != j:
                     break
                 ret += i
             return ret
 
-        ans = ''
+        ans = &apos;&apos;
         for i in range(len(strs)):
             if i == 0:
                 ans = strs[i]
@@ -1359,8 +1359,8 @@ class Solution:
         &quot;&quot;&quot;
         if not digits:
             return []
-        ans = ['']
-        a = ['', '', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
+        ans = [&apos;&apos;]
+        a = [&apos;&apos;, &apos;&apos;, &apos;abc&apos;, &apos;def&apos;, &apos;ghi&apos;, &apos;jkl&apos;, &apos;mno&apos;, &apos;pqrs&apos;, &apos;tuv&apos;, &apos;wxyz&apos;]
         for d in digits:
             ans = [j+i for j in ans for i in a[int(d)]]
         return ans
@@ -1440,9 +1440,9 @@ class Solution:
         :rtype: bool
         &quot;&quot;&quot;
         a = []
-        tag = {')':'(', ']':'[', '}':'{'}
+        tag = {&apos;)&apos;:&apos;(&apos;, &apos;]&apos;:&apos;[&apos;, &apos;}&apos;:&apos;{&apos;}
         for i in s:
-            if i in '([{':
+            if i in &apos;([{&apos;:
                 a.append(i)
             else:
                 if a and a[-1] == tag[i]:
@@ -1453,8 +1453,8 @@ class Solution:
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Fri, 29 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/29/leetcode-11-20.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/29/leetcode-11-20.html</guid>
+        <link>http://localhost:4000/2018/06/29/leetcode-11-20.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/29/leetcode-11-20.html</guid>
         
         
         <category>LeetCode</category>
@@ -1573,9 +1573,9 @@ class Solution:
         :type s: str
         :rtype: str
         &quot;&quot;&quot;
-        S = '##'
+        S = &apos;##&apos;
         for i in s:
-            S += i + '#'
+            S += i + &apos;#&apos;
         M, R, ans = 0, 0, 0
         p = [0] * len(S)
         for i in range(len(S)):
@@ -1591,7 +1591,7 @@ class Solution:
             if ans &amp;lt; p[i]-1:
                 ans = p[i]-1
                 z = i
-        ret = ss[z-ans+1:z+ans].replace('#', '')
+        ret = ss[z-ans+1:z+ans].replace(&apos;#&apos;, &apos;&apos;)
         return ret
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1616,9 +1616,9 @@ class Solution:
                 d = -1
             elif x == 0:
                 d = 1
-        ans = ''
+        ans = &apos;&apos;
         for i in t:
-            ans += ''.join(i)
+            ans += &apos;&apos;.join(i)
         return ans
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1633,9 +1633,9 @@ class Solution:
         :rtype: int
         &quot;&quot;&quot;
         s = str(x)
-        sign = ''
-        if s[0] == '-':
-            sign = '-'
+        sign = &apos;&apos;
+        if s[0] == &apos;-&apos;:
+            sign = &apos;-&apos;
             s = s[1:]
         ans = sign + s[::-1]
         ans = int(ans)
@@ -1667,9 +1667,9 @@ class Solution:
         ans = 0
         for i, j in enumerate(s):
             if i == 0:
-                if j == '-':
+                if j == &apos;-&apos;:
                     sign = -1
-                elif j == '+':
+                elif j == &apos;+&apos;:
                     sign = 1
                 elif j.isdigit():
                     sign = 1
@@ -1712,15 +1712,15 @@ class Solution:
         :type p: str
         :rtype: bool
         &quot;&quot;&quot;
-        p = '^' + p + '$'
+        p = &apos;^&apos; + p + &apos;$&apos;
         ok = re.match(p, s)
         return True if ok else False
 &lt;/code&gt;&lt;/pre&gt;
 
 </description>
         <pubDate>Tue, 26 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/26/leetcode-1-10.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/26/leetcode-1-10.html</guid>
+        <link>http://localhost:4000/2018/06/26/leetcode-1-10.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/26/leetcode-1-10.html</guid>
         
         
         <category>LeetCode</category>
@@ -1802,50 +1802,50 @@ from collections import deque
 import heapq
 
 def TestStack(n):
-    log.debug('===== begin test stack =====')
+    log.debug(&apos;===== begin test stack =====&apos;)
     s = deque()
     for i in range(n):
         s.append(i)
-    log.debug('stack push ok')
+    log.debug(&apos;stack push ok&apos;)
     i = n
     while s:
         i -= 1
         assert(i == s.pop())
-    log.debug('stack pop ok')
+    log.debug(&apos;stack pop ok&apos;)
 
 def TestQueue(n):
-    log.debug('===== begin test queue =====')
+    log.debug(&apos;===== begin test queue =====&apos;)
     q = deque()
     for i in range(n):
         q.append(i)
-    log.debug('queue push ok')
+    log.debug(&apos;queue push ok&apos;)
     i = 0
     while q:
         assert(i == q.popleft())
         i += 1
-    log.debug('queue pop ok')
+    log.debug(&apos;queue pop ok&apos;)
 
 def TestPriorityQueue(n):
-    log.debug('===== begin test priority queue =====')
+    log.debug(&apos;===== begin test priority queue =====&apos;)
     pq = []
     for i in range(n):
         heapq.heappush(pq, i)
-    log.debug('priority queue push ok')
+    log.debug(&apos;priority queue push ok&apos;)
     i = 0
     while pq:
         assert(i == pq[0])
         heapq.heappop(pq)
         i += 1
-    log.debug('priority queue pop ok')
+    log.debug(&apos;priority queue pop ok&apos;)
 
 def main():
-    log.basicConfig(level=log.DEBUG, format='%(asctime)s - %(message)s')
+    log.basicConfig(level=log.DEBUG, format=&apos;%(asctime)s - %(message)s&apos;)
     N = 1000000
     TestStack(N)
     TestQueue(N)
     TestPriorityQueue(N)
 
-if __name__ == '__main__':
+if __name__ == &apos;__main__&apos;:
     main()
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1870,8 +1870,8 @@ sys        0m0.078s
 &lt;p&gt;运行速度非常快，接近C/C++的性能。&lt;/p&gt;
 </description>
         <pubDate>Sat, 23 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html</guid>
+        <link>http://localhost:4000/2018/06/23/queue-and-stack-in-python.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/23/queue-and-stack-in-python.html</guid>
         
         
         <category>python</category>
@@ -1989,8 +1989,8 @@ sys        0m0.078s
 &lt;/ul&gt;
 </description>
         <pubDate>Fri, 22 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/22/common-stl-containers.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/22/common-stl-containers.html</guid>
+        <link>http://localhost:4000/2018/06/22/common-stl-containers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/22/common-stl-containers.html</guid>
         
         
         <category>cpp</category>
@@ -2093,9 +2093,9 @@ import numpy as np
 from numpy import dot
 from numpy.linalg import inv
 
-data = pd.read_csv('yeardata.csv')
+data = pd.read_csv(&apos;yeardata.csv&apos;)
 X = data.iloc[:, 1:5]
-X['X0'] = 1
+X[&apos;X0&apos;] = 1
 X = X.iloc[:, [4,0,1,2,3]]
 #print(X)
 Y = data.iloc[:, 0]
@@ -2113,8 +2113,8 @@ print(theta)
 &lt;p&gt;即\(GDP = -94.514 + 1.328Consumption + 2.061MO + 0.390EM + 0.118Investment\)。&lt;/p&gt;
 </description>
         <pubDate>Thu, 21 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html</guid>
+        <link>http://localhost:4000/2018/06/21/linear-regression-by-least-squares.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/21/linear-regression-by-least-squares.html</guid>
         
         
         <category>机器</category>
@@ -2174,7 +2174,7 @@ int main(int argc, char *argv[]) {
 
 $ cat  scott.po
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR THE PACKAGE&apos;S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR &amp;lt;EMAIL@ADDRESS&amp;gt;, YEAR.
 #
@@ -2220,8 +2220,8 @@ say hello in english
 &lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Mon, 18 Jun 2018 00:00:00 +0800</pubDate>
-        <link>https://chenfy27.github.io/2018/06/18/gettext.html</link>
-        <guid isPermaLink="true">https://chenfy27.github.io/2018/06/18/gettext.html</guid>
+        <link>http://localhost:4000/2018/06/18/gettext.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/18/gettext.html</guid>
         
         
         <category>平台</category>
