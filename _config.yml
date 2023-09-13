@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://chenfy27.github.io # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 author: chenfy27
+theme: minima
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
@@ -37,11 +38,6 @@ ga:
 # Build settings
 permalink: :year/:month/:day/:title.html
 markdown: kramdown
-highlighter: none
-rouge:
-  css_class: 'highlight'
-  css_style: 'color:#657b83;background-color:#fdf6e3;'
-  code_theme: 'solarized-light'
 mathjax: enabled
 sass:
   style: compressed
