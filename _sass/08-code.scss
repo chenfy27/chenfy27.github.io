@@ -1,8 +1,8 @@
 // https://gist.github.com/k-f-/c7bb4eb22010ffe8a252
 
-.highlight .hll { background-color: #ffffcc; }
-.highlight { color: #f8f8f2; background-color: #282a36; }
-.highlight .c { color: #6272a4; } /* Comment */
+.highlight .hll { background-color: #ffffff; }
+.highlight { color: #f8f8f2; background-color: #ffffff; }
+.highlight .c { color: #f8f8f2; } /* Comment */
 .highlight .err { color: #f8f8f2; } /* Error */
 .highlight .g { color: #f8f8f2; } /* Generic */
 .highlight .k { color: #ff79c6; } /* Keyword */
@@ -11,10 +11,10 @@
 .highlight .o { color: #f8f8f2; } /* Operator */
 .highlight .x { color: #f8f8f2; } /* Other */
 .highlight .p { color: #f8f8f2; } /* Punctuation */
-.highlight .cm { color: #6272a4; } /* Comment.Multiline */
-.highlight .cp { color: #ff79c6; } /* Comment.Preproc */
-.highlight .c1 { color: #6272a4; } /* Comment.Single */
-.highlight .cs { color: #6272a4; } /* Comment.Special */
+.highlight .cm { color: #f8f8f2; } /* Comment.Multiline */
+.highlight .cp { color: #f8f8f2; } /* Comment.Preproc */
+.highlight .c1 { color: #f8f8f2; } /* Comment.Single */
+.highlight .cs { color: #f8f8f2; } /* Comment.Special */
 .highlight .gd { color: #8b080b; } /* Generic.Deleted */
 .highlight .ge { color: #f8f8f2; text-decoration: underline; } /* Generic.Emph */
 .highlight .gr { color: #f8f8f2; } /* Generic.Error */
@@ -24,7 +24,7 @@
 .highlight .gp { color: #f8f8f2; } /* Generic.Prompt */
 .highlight .gs { color: #f8f8f2; } /* Generic.Strong */
 .highlight .gu { color: #f8f8f2; font-weight: bold; } /* Generic.Subheading */
-.highlight .gt { color: #f8f8f0; background-color: #ff79c6; } /* Generic.Traceback */
+.highlight .gt { color: #f8f8f0; background-color: #ffffff; } /* Generic.Traceback */
 .highlight .kc { color: #ff79c6; } /* Keyword.Constant */
 .highlight .kd { color: #ff79c6; } /* Keyword.Declaration */
 .highlight .kn { color: #ff79c6; } /* Keyword.Namespace */
@@ -47,7 +47,7 @@
 .highlight .nx { color: #f8f8f2; } /* Name.Other */
 .highlight .py { color: #f8f8f2; } /* Name.Property */
 .highlight .nt { color: #ff79c6; } /* Name.Tag */
-.highlight .nv { color: #8be9fd; font-style: italic; } /* Name.Variable */
+.highlight .nv { color: #8be9fd; } /* Name.Variable */
 .highlight .ow { color: #ff79c6; } /* Operator.Word */
 .highlight .w { color: #f8f8f2; } /* Text.Whitespace */
 .highlight .mf { color: #bd93f9; } /* Literal.Number.Float */
@@ -66,7 +66,7 @@
 .highlight .s1 { color: #f1fa8c; } /* Literal.String.Single */
 .highlight .ss { color: #f1fa8c; } /* Literal.String.Symbol */
 .highlight .bp { color: #f8f8f2; } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #8be9fd; font-style: italic; } /* Name.Variable.Class */
-.highlight .vg { color: #8be9fd; font-style: italic; } /* Name.Variable.Global */
-.highlight .vi { color: #8be9fd; font-style: italic; } /* Name.Variable.Instance */
+.highlight .vc { color: #8be9fd; } /* Name.Variable.Class */
+.highlight .vg { color: #8be9fd; } /* Name.Variable.Global */
+.highlight .vi { color: #8be9fd; } /* Name.Variable.Instance */
 .highlight .il { color: #bd93f9; } /* Literal.Number.Integer.Long */
