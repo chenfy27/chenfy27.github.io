@@ -37,7 +37,17 @@ ga:
 # Build settings
 permalink: :year/:month/:day/:title.html
 markdown: kramdown
-highlighter: pygments
+kramdown:
+  syntax_highlighter: pygments
+  syntax_highlighter_opts:
+    css_class: highlight
+    default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+#highlighter: pygments
 mathjax: enabled
 sass:
   style: compressed
