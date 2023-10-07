@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2023-10-07T23:49:06+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">陈方勇的网络笔记</title><subtitle>陈方勇的网络笔记
-</subtitle><author><name>chenfy27</name></author><entry><title type="html">leetcode 51-60</title><link href="http://0.0.0.0:4000/2018/08/11/leetcode-51-60.html" rel="alternate" type="text/html" title="leetcode 51-60" /><published>2018-08-11T00:00:00+08:00</published><updated>2018-08-11T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/08/11/leetcode-51-60</id><content type="html" xml:base="http://0.0.0.0:4000/2018/08/11/leetcode-51-60.html"><![CDATA[<h3 id="51n皇后"><a href="https://leetcode-cn.com/problems/n-queens/description/">51.N皇后</a></h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://chenfy27.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chenfy27.github.io/" rel="alternate" type="text/html" /><updated>2023-10-08T00:21:41+08:00</updated><id>https://chenfy27.github.io/feed.xml</id><title type="html">陈方勇的网络笔记</title><subtitle>陈方勇的网络笔记
+</subtitle><author><name>chenfy27</name></author><entry><title type="html">leetcode 51-60</title><link href="https://chenfy27.github.io/2018/08/11/leetcode-51-60.html" rel="alternate" type="text/html" title="leetcode 51-60" /><published>2018-08-11T00:00:00+08:00</published><updated>2018-08-11T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/08/11/leetcode-51-60</id><content type="html" xml:base="https://chenfy27.github.io/2018/08/11/leetcode-51-60.html"><![CDATA[<h3 id="51n皇后"><a href="https://leetcode-cn.com/problems/n-queens/description/">51.N皇后</a></h3>
 
 <p>将n个皇后放在nxn的棋盘上，使皇后之间不能相互攻击，求所有可行解。</p>
 
@@ -299,7 +299,7 @@ class Solution:
             if n-1 &gt; i:
                 p //= n-1-i
         return ans
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[51.N皇后]]></summary></entry><entry><title type="html">leetcode 41-50</title><link href="http://0.0.0.0:4000/2018/08/10/leetcode-41-50.html" rel="alternate" type="text/html" title="leetcode 41-50" /><published>2018-08-10T00:00:00+08:00</published><updated>2018-08-10T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/08/10/leetcode-41-50</id><content type="html" xml:base="http://0.0.0.0:4000/2018/08/10/leetcode-41-50.html"><![CDATA[<h3 id="41缺失的第一个正整数"><a href="https://leetcode-cn.com/problems/first-missing-positive/description/">41.缺失的第一个正整数</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[51.N皇后]]></summary></entry><entry><title type="html">leetcode 41-50</title><link href="https://chenfy27.github.io/2018/08/10/leetcode-41-50.html" rel="alternate" type="text/html" title="leetcode 41-50" /><published>2018-08-10T00:00:00+08:00</published><updated>2018-08-10T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/08/10/leetcode-41-50</id><content type="html" xml:base="https://chenfy27.github.io/2018/08/10/leetcode-41-50.html"><![CDATA[<h3 id="41缺失的第一个正整数"><a href="https://leetcode-cn.com/problems/first-missing-positive/description/">41.缺失的第一个正整数</a></h3>
 
 <p>给定一个未排序的整数数组，找出其中没有出现的最小正整数。</p>
 
@@ -501,7 +501,7 @@ class Solution:
         :rtype: float
         """
         return pow(x, n)
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[41.缺失的第一个正整数]]></summary></entry><entry><title type="html">leetcode 31-40</title><link href="http://0.0.0.0:4000/2018/07/02/leetcode-31-40.html" rel="alternate" type="text/html" title="leetcode 31-40" /><published>2018-07-02T00:00:00+08:00</published><updated>2018-07-02T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/07/02/leetcode-31-40</id><content type="html" xml:base="http://0.0.0.0:4000/2018/07/02/leetcode-31-40.html"><![CDATA[<h3 id="31下一个排列"><a href="https://leetcode-cn.com/problems/next-permutation/description/">31.下一个排列</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[41.缺失的第一个正整数]]></summary></entry><entry><title type="html">leetcode 31-40</title><link href="https://chenfy27.github.io/2018/07/02/leetcode-31-40.html" rel="alternate" type="text/html" title="leetcode 31-40" /><published>2018-07-02T00:00:00+08:00</published><updated>2018-07-02T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/07/02/leetcode-31-40</id><content type="html" xml:base="https://chenfy27.github.io/2018/07/02/leetcode-31-40.html"><![CDATA[<h3 id="31下一个排列"><a href="https://leetcode-cn.com/problems/next-permutation/description/">31.下一个排列</a></h3>
 
 <p>给出一组由正整数构成的序列，要求重排得到字典序中下一个更大的排列，如不存在则排成最小排列，要求原地修改。</p>
 
@@ -844,7 +844,7 @@ class Solution:
         candidates.sort()
         dfs(0, 0, [], ans, candidates, target)
         return sorted(list(ans))
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[31.下一个排列]]></summary></entry><entry><title type="html">leetcode 21-30</title><link href="http://0.0.0.0:4000/2018/07/01/leetcode-21-30.html" rel="alternate" type="text/html" title="leetcode 21-30" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/07/01/leetcode-21-30</id><content type="html" xml:base="http://0.0.0.0:4000/2018/07/01/leetcode-21-30.html"><![CDATA[<h3 id="21合并两个有序链表"><a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/">21.合并两个有序链表</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[31.下一个排列]]></summary></entry><entry><title type="html">leetcode 21-30</title><link href="https://chenfy27.github.io/2018/07/01/leetcode-21-30.html" rel="alternate" type="text/html" title="leetcode 21-30" /><published>2018-07-01T00:00:00+08:00</published><updated>2018-07-01T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/07/01/leetcode-21-30</id><content type="html" xml:base="https://chenfy27.github.io/2018/07/01/leetcode-21-30.html"><![CDATA[<h3 id="21合并两个有序链表"><a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/">21.合并两个有序链表</a></h3>
 
 <p>将两个有序链表合并为一个新的有序链表并返回。</p>
 
@@ -1127,7 +1127,7 @@ class Solution:
             if tmp == std:
                 ans.append(i)
         return ans
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[21.合并两个有序链表]]></summary></entry><entry><title type="html">leetcode 11-20</title><link href="http://0.0.0.0:4000/2018/06/29/leetcode-11-20.html" rel="alternate" type="text/html" title="leetcode 11-20" /><published>2018-06-29T00:00:00+08:00</published><updated>2018-06-29T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/29/leetcode-11-20</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/29/leetcode-11-20.html"><![CDATA[<h3 id="11盛水最多的容器"><a href="https://leetcode-cn.com/problems/container-with-most-water/description/">11.盛水最多的容器</a></h3>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[21.合并两个有序链表]]></summary></entry><entry><title type="html">leetcode 11-20</title><link href="https://chenfy27.github.io/2018/06/29/leetcode-11-20.html" rel="alternate" type="text/html" title="leetcode 11-20" /><published>2018-06-29T00:00:00+08:00</published><updated>2018-06-29T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/29/leetcode-11-20</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/29/leetcode-11-20.html"><![CDATA[<h3 id="11盛水最多的容器"><a href="https://leetcode-cn.com/problems/container-with-most-water/description/">11.盛水最多的容器</a></h3>
 
 <p>给定n个非负整数a[n]，每个数代表一个点(i,a[i])，画n条垂线，每条垂线的端点分别为(i,a[i])和(i,0)，选两条线，使它们与x轴构成的容器可以容纳最多的水。</p>
 
@@ -1385,7 +1385,7 @@ class Solution:
                 else:
                     return False
         return len(a) == 0
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[11.盛水最多的容器]]></summary></entry><entry><title type="html">leetcode 1-10</title><link href="http://0.0.0.0:4000/2018/06/26/leetcode-1-10.html" rel="alternate" type="text/html" title="leetcode 1-10" /><published>2018-06-26T00:00:00+08:00</published><updated>2018-06-26T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/26/leetcode-1-10</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/26/leetcode-1-10.html"><![CDATA[<p>为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。</p>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[11.盛水最多的容器]]></summary></entry><entry><title type="html">leetcode 1-10</title><link href="https://chenfy27.github.io/2018/06/26/leetcode-1-10.html" rel="alternate" type="text/html" title="leetcode 1-10" /><published>2018-06-26T00:00:00+08:00</published><updated>2018-06-26T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/26/leetcode-1-10</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/26/leetcode-1-10.html"><![CDATA[<p>为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。</p>
 
 <h3 id="1两数之和"><a href="https://leetcode-cn.com/problems/two-sum/description/">1.两数之和</a></h3>
 
@@ -1637,7 +1637,7 @@ class Solution:
         p = '^' + p + '$'
         ok = re.match(p, s)
         return True if ok else False
-</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。]]></summary></entry><entry><title type="html">python中的栈和队列</title><link href="http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python.html" rel="alternate" type="text/html" title="python中的栈和队列" /><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/23/queue-and-stack-in-python.html"><![CDATA[<p>栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。</p>
+</code></pre>]]></content><author><name>chenfy27</name></author><category term="LeetCode" /><summary type="html"><![CDATA[为熟悉python，这里选择用它来写LeetCode上的题目练手，在能通过的前提下尽可能地让代码简单清晰。]]></summary></entry><entry><title type="html">python中的栈和队列</title><link href="https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html" rel="alternate" type="text/html" title="python中的栈和队列" /><published>2018-06-23T00:00:00+08:00</published><updated>2018-06-23T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/23/queue-and-stack-in-python.html"><![CDATA[<p>栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。</p>
 
 <h3 id="栈">栈</h3>
 
@@ -1775,7 +1775,7 @@ user       0m1.790s
 sys        0m0.078s
 </code></pre>
 
-<p>运行速度非常快，接近C/C++的性能。</p>]]></content><author><name>chenfy27</name></author><category term="python" /><summary type="html"><![CDATA[栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。]]></summary></entry><entry><title type="html">stl常用容器方法</title><link href="http://0.0.0.0:4000/2018/06/22/common-stl-containers.html" rel="alternate" type="text/html" title="stl常用容器方法" /><published>2018-06-22T00:00:00+08:00</published><updated>2018-06-22T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/22/common-stl-containers</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/22/common-stl-containers.html"><![CDATA[<h3 id="vector">vector</h3>
+<p>运行速度非常快，接近C/C++的性能。</p>]]></content><author><name>chenfy27</name></author><category term="python" /><summary type="html"><![CDATA[栈和队列是较常用的数据结构，本文整理了它们在python下的高效实现方法。]]></summary></entry><entry><title type="html">stl常用容器方法</title><link href="https://chenfy27.github.io/2018/06/22/common-stl-containers.html" rel="alternate" type="text/html" title="stl常用容器方法" /><published>2018-06-22T00:00:00+08:00</published><updated>2018-06-22T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/22/common-stl-containers</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/22/common-stl-containers.html"><![CDATA[<h3 id="vector">vector</h3>
 
 <ul>
   <li>push_back(val)</li>
@@ -1881,7 +1881,7 @@ sys        0m0.078s
   <li>lower_bound(key) (for set and multiset)</li>
   <li>upper_bound(key) (for set and multiset)</li>
   <li>equal_range(key)</li>
-</ul>]]></content><author><name>chenfy27</name></author><category term="cpp" /><summary type="html"><![CDATA[vector]]></summary></entry><entry><title type="html">线性回归之最小二乘法</title><link href="http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares.html" rel="alternate" type="text/html" title="线性回归之最小二乘法" /><published>2018-06-21T00:00:00+08:00</published><updated>2018-06-21T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/21/linear-regression-by-least-squares.html"><![CDATA[<h3 id="问题描述">问题描述</h3>
+</ul>]]></content><author><name>chenfy27</name></author><category term="cpp" /><summary type="html"><![CDATA[vector]]></summary></entry><entry><title type="html">线性回归之最小二乘法</title><link href="https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html" rel="alternate" type="text/html" title="线性回归之最小二乘法" /><published>2018-06-21T00:00:00+08:00</published><updated>2018-06-21T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/21/linear-regression-by-least-squares.html"><![CDATA[<h3 id="问题描述">问题描述</h3>
 
 <p>假设自变量\((X_{1}, X_{2},\cdots,X_{n})\)与因变量\(Y\)之间满足某种线性关系：</p>
 
@@ -1992,7 +1992,7 @@ print(theta)
 <pre><code>[-94.51398652   1.32825128   2.06138007   0.38959829   0.11848647]
 </code></pre>
 
-<p>即\(GDP = -94.514 + 1.328Consumption + 2.061MO + 0.390EM + 0.118Investment\)。</p>]]></content><author><name>chenfy27</name></author><category term="机器" /><summary type="html"><![CDATA[问题描述]]></summary></entry><entry><title type="html">支持多语言gettext</title><link href="http://0.0.0.0:4000/2018/06/18/gettext.html" rel="alternate" type="text/html" title="支持多语言gettext" /><published>2018-06-18T00:00:00+08:00</published><updated>2018-06-18T00:00:00+08:00</updated><id>http://0.0.0.0:4000/2018/06/18/gettext</id><content type="html" xml:base="http://0.0.0.0:4000/2018/06/18/gettext.html"><![CDATA[<p>有时，程序展现给用户的信息需要支持多种语言，并且允许在语言之间做灵活的切换，最为常见的场景是支持中英文，GNU的gettext是一个支持多语言的成熟解决方案。</p>
+<p>即\(GDP = -94.514 + 1.328Consumption + 2.061MO + 0.390EM + 0.118Investment\)。</p>]]></content><author><name>chenfy27</name></author><category term="机器" /><summary type="html"><![CDATA[问题描述]]></summary></entry><entry><title type="html">支持多语言gettext</title><link href="https://chenfy27.github.io/2018/06/18/gettext.html" rel="alternate" type="text/html" title="支持多语言gettext" /><published>2018-06-18T00:00:00+08:00</published><updated>2018-06-18T00:00:00+08:00</updated><id>https://chenfy27.github.io/2018/06/18/gettext</id><content type="html" xml:base="https://chenfy27.github.io/2018/06/18/gettext.html"><![CDATA[<p>有时，程序展现给用户的信息需要支持多种语言，并且允许在语言之间做灵活的切换，最为常见的场景是支持中英文，GNU的gettext是一个支持多语言的成熟解决方案。</p>
 
 <h3 id="编程接口">编程接口</h3>
 
